@@ -5,7 +5,7 @@ function login(){
         window.open("websitepage.html")
     }
     else{
-        alert("Invaild Username")
+        alert("Invaild Username, Please enter valid email ID")
     }
 }
 
