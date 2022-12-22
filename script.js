@@ -8,8 +8,24 @@
 
 let InputElement=document.getElementById("InputElement") 
 function login(){
+    var gsid;
     if ((InputElement.value === "bhanu@gmail.com") || (InputElement.value ==="user@gmail.com") || (InputElement.value === "demouser@gmail.com")){
         alert("Valid User");
+        gsid= (InputElement.value).substr(6,4) ;
+        //passing user and account objects:
+aptrinsic("identify",
+{
+//User Fields
+  "id": gsid, // Required for logged in app users
+  "email": InputElement.value,
+  
+},
+{
+//Account Fields
+  "id":"GS2551", //Required
+  "name":"International Business Machine",
+
+});
         window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
     else{
