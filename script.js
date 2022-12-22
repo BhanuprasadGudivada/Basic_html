@@ -18,6 +18,7 @@ aptrinsic("identify",
 //User Fields
   "id": gsid, // Required for logged in app users
   "email": InputElement.value,
+  "User Role": "Admin",
   
 },
 {
