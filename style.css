@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+    background-size: cover;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+}
+.main-header{
+    color:black;
+    text-align: center;
+    font-family: roboto;
+    font-size: 15px;
+}
+.icon-cont{
+    background-color: grey;
+
+
+}
+.button-container{
+    background-color: rgb(5, 81, 66);
+}

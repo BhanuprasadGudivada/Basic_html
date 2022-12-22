@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <div>
+            <div class="container">
+                <h1 class="text-center">Website page</h1>
+            </div>
+            <div class="d-flex flex-row p-2 button-container ml-4 mr-4">
+                <a class="p-1 ml-2 btn" onclick="Home()">Home</a>
+                <a class="p-1 ml-2 btn" onclick="Contact()">Contact</a>
+                <a class="p-1 ml-2 btn" onclick="Payment()">Payment</a>
+                <a class="p-1 ml-2 btn" onclick="About()">About us</a>
+                <a class="p-1 ml-2 btn" onclick="DataLoader()">Data Loader</a>
+                <a class="p-1 ml-2 btn" onclick="Login()">Log out</a>
+
+            </div>
+            <div class="m-2 mt-3 m-3 ml-3 mr-3 shadow" id="HomePage">
+                <title>HomePage</title>
+                <h1 class="text-center pt-3">Home Page</h1>
+                <div class="d-flex flex-row m-2">
+                    <button class="btn btn-dark m-2">Request ID</button>
+                    <button class="btn btn-primary m-2">Upload ID</button>
+                </div>
+                <div class="p-2 pl-3">
+                    <p>Freedback</p>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="pt-2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+            <div class="m-2 mt-3 m-3 ml-3 mr-3 shadow p-5 d-none" id="ContactPage">
+                <h1 class="text-center pt-3">Contact Page</h1>
+                <h1 class="pl-2" style="text-align: left;">Side Bar</h1> 
+                <p class="" style="text-align: center; font-size: 20px;">Details</p> 
+                <div style="border-style: solid;" class="m-2 p-5 pt-3" >
+                    <div>
+                        <label for="NameInput">
+                            Name:
+                            <input type="text" id="NameInput" placeholder="Enter Full Name">
+                        </label>
+                    </div> 
+                    <div class="pt-3">
+                        <label for="NameInput">
+                            Email: 
+                            <input type="text" id="NameInput" placeholder="Enter Your Mail ID">
+                        </label>
+                    </div>
+                    <div class="pt-3">
+                        <label for="NameInput">
+                            Gender: 
+                            <input type="radio" id="GenderInput1" placeholder="Select">
+                            <label for="GenderInput1">Male</label>
+                            <input type="radio" id="GenderInput2" placeholder="Select">
+                            <label for="GenderInput2">Female</label>
+        
+                        </label>
+                    </div>
+                    <div class="pt-3">
+                        <label for="NameInput">
+                            Subject: 
+                            <input type="text" id="NameInput" placeholder="">
+                        </label>
+                    </div>
+                    <div class="pt-3">
+                        <label for="NameInput">
+                            Message: 
+                            <input type="text" id="NameInput" placeholder="Message Box">
+                        </label>
+                    </div>
+                    <button class="btn m-3" style="background-color: darkslategray; color: whitesmoke;">Send Message</button>
+                </div> 
+         
+            </div>
+            <div class="m-2 mt-2 m-3 ml-3 mr-3 shadow d-none" id="PaymentPage">
+                <h1 class="text-center pt-3">Payment Page</h1>
+                <p style="font-weight: bold;" class="p-3">Custom Events</p>
+                <button class="btn btn-primary m-3">Pay Now</button>
+                <p class="pl-3">This page Turns violet when you hold the V key</p>
+                <br>
+                <button class="btn btn-primary m-3">Show KC BOT</button>
+                <button class="btn ml-3" style="background-color: grey;">Click Capture only for session</button>
+                <h1 style="color: lightseagreen;" class="pl-3">Age Calculator</h1>
+                <div class="d-flex flex-row m-2">
+                    <div class="pl-2 mb-3">
+                        <label>Birthday:</label>
+                        <input type="date">
+                        <button style="border-radius: 5px;">calculate Age</button>
+                        <button class="btn btn-success">Yes</button>
+                    </div>
+    
+                </div>
+            </div> 
+            <div class="m-2 mt-2 m-3 ml-3 mr-3 shadow d-none" id="AboutPage">
+                <h1 class="text-center pt-3">About Page</h1>
+                <div class="dl-flex flex-row pl-3 pt-3">
+                    <h1 style="color: inherit; text-align: left;">Side bar</h1>
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lifestyleasia.com%2Find%2Fliving%2Fpeople%2Frohit-sharma-net-worth-and-all-its-contributing-factors%2F&psig=AOvVaw32DaqNv8vJ3RfXF7qqrvJ2&ust=1671617235399000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCIjUtdP5h_wCFQAAAAAdAAAAABAD" style="height: 100px;"/>
+                    <div class="d-flex flex-column justify-content-left pr-2">
+                        <p style="color: lightseagreen;" class="">Rohit Sharma</p>
+                        <p>Title: <a style="color: darkgreen;">Indian Captian</a></p>
+                        <p>Jersy no: <a style="color: rgb(27, 27, 84);">7</a></p>
+                        <button class="btn btn-dark" >Display ID</button>
+                    </div>
+                
+                </div> 
+                <div>
+                    <p class="p-3">Touted as an extra-ordinarily talented player, Rohit Sharma is looked at by experts as a batting mainstay of Team India in the near future. Sharma made his mark at the international stage by hitting an unbeaten fifty against South Africa in the 2007 Twenty20 World Cup and a 16-ball 30 against Pakistan in the final of the tournament. In the 2008 Commonwealth Bank Series in Australia, Sharma continued with his good form hitting 66 in the first final at Sydney and adding 123 runs for the fourth wicket with Sachin Tendulkar as India chased down a 240-run target in 45.5 overs. But Sharma soon lost form and with Suresh Raina and Virat Kohli scoring big, was dropped from the Indian team and was ignored for the 2011 World Cup. Sharma was set to make his Test debut in February with VVS Laxman failing to recover from an injury, but Sharma injured himself playing football in the warm-up on the first morning and missed out on his Test debut. Sharma played the first three seasons of IPL for Deccan Chargers and in the players' auction for IPL 4, he was sold for $2m to Mumbai Indians.</p>
+                </div>
+                <button class="btn ml-3" style="color: rgb(126, 52, 200);">+ Add Salary</button>
+    
+    
+            </div>
+            <div id="DataLoaderPage" class="d-none m-2 mt-2 m-3 ml-3 mr-3 shadow pt-2" style="border-radius: 10px; border-color: navy; border-style: solid;">
+                <h1 class="text-center pt-3">GainSight PX Data Loader</h1>
+                <div class="p-2 pl-2 ">
+                    <label>API Key : 
+                        <input type="text" placeholder="Enter Key" style="width: 600px;">
+                    </label>
+                </div>
+                <div class="p-2 pl-2 ">
+                
+                    <p> 
+                        Update data For :  
+                        <label class="pl-4"> 
+                        <input type="radio" style="width:20;"> Account
+                        </label>
+                        <label class="pl-4">
+                            <input type="radio" style="width:70;"> User
+                        </label>
+                    </p>
+                </div>
+                <div class="p-2 pl-2">
+                    <label>User ID : 
+                        <input type="text" placeholder="Enter ID" style="width: 600px;">
+                    </label>
+                </div>
+                <div class="p-2 pl-2">
+                
+                    <p> 
+                        Select Operation :  
+                        <label class="pl-4">
+                        <input type="radio" style="width:20;"> Read
+                        </label>
+                        <label class="pl-4">
+                            <input type="radio" style="width:70;"> Update
+                        </label>
+                        <label class="pl-4">
+                            <input type="radio" style="width:20;"> Delete
+                            </label>
+                            <label class="pl-4">
+                                <input type="radio" style="width:70;"> Bulk Update
+                            </label>
+                            <label class="pl-4">
+                                <input type="radio" style="width:70;"> Bulk Delete
+                            </label>
+                    </p>
+                </div>
+                <div class="d-flex flex-row justify-content-center mb-2">
+                    <button class="btn btn-primary">Get Data</button>
+                </div>
+                <p style="font-weight: bold;" class="pl-4">Execution Response : </p>
+                <p style="font-weight: bold;" class="pl-4">File Content : </p>
+    
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
