@@ -52,5 +52,5 @@ function DataLoader(){
     DataLoaderPage.classList.remove("d-none")
 }
 function Login(){
-    window.open("index.html")
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
