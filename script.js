@@ -49,11 +49,12 @@ function Home(){
     DataLoaderPage.classList.add("d-none")
 }
 function Contact(){
-    HomePage.classList.add("d-none")
-    ContactPage.classList.remove("d-none")
-    PaymentPage.classList.add("d-none")
-    AboutPage.classList.add("d-none")
-    DataLoaderPage.classList.add("d-none")
+    //HomePage.classList.add("d-none")
+    //ContactPage.classList.remove("d-none")
+    //PaymentPage.classList.add("d-none")
+    //AboutPage.classList.add("d-none")
+    //DataLoaderPage.classList.add("d-none")
+    window.location="file:///Users/bgudivada/Documents/Basic_html/contactWeb.html"
 }
 function Payment(){
     HomePage.classList.add("d-none")
