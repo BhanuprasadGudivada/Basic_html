@@ -54,7 +54,7 @@ function Contact(){
     //PaymentPage.classList.add("d-none")
     //AboutPage.classList.add("d-none")
     //DataLoaderPage.classList.add("d-none")
-    window.location="file:///Users/bgudivada/Documents/Basic_html/contactWeb.html"
+    window.location="contactWeb.html"
 }
 function Payment(){
     HomePage.classList.add("d-none")
