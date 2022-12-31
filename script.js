@@ -49,12 +49,12 @@ function Home(){
     DataLoaderPage.classList.add("d-none")
 }
 function Contact(){
-    //HomePage.classList.add("d-none")
-    //ContactPage.classList.remove("d-none")
-    //PaymentPage.classList.add("d-none")
-    //AboutPage.classList.add("d-none")
-    //DataLoaderPage.classList.add("d-none")
-    window.location="contactWeb.html"
+    HomePage.classList.add("d-none")
+    ContactPage.classList.remove("d-none")
+    PaymentPage.classList.add("d-none")
+    AboutPage.classList.add("d-none")
+    DataLoaderPageclassList.add("d-none")
+    //window.location="contactWeb.html"
 }
 function Payment(){
     HomePage.classList.add("d-none")
