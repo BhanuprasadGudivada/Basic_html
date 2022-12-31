@@ -64,12 +64,12 @@ function Payment(){
     DataLoaderPage.classList.add("d-none")
 }
 function About(){
-    //HomePage.classList.add("d-none")
-    //ContactPage.classList.add("d-none")
-    //PaymentPage.classList.add("d-none")
-    //AboutPage.classList.remove("d-none")
-    //DataLoaderPage.classList.add("d-none")
-    window.location="aboutweb.html"
+    HomePage.classList.add("d-none")
+    ContactPage.classList.add("d-none")
+    PaymentPage.classList.add("d-none")
+    AboutPage.classList.remove("d-none")
+    DataLoaderPage.classList.add("d-none")
+    
 }
 function DataLoader(){
     HomePage.classList.add("d-none")
