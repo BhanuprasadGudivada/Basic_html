@@ -69,7 +69,7 @@ function About(){
     //PaymentPage.classList.add("d-none")
     //AboutPage.classList.remove("d-none")
     //DataLoaderPage.classList.add("d-none")
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutWeb.html"
+    window.location="aboutWeb.html"
 }
 function DataLoader(){
     HomePage.classList.add("d-none")
