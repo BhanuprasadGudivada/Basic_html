@@ -42,41 +42,44 @@ let AboutPage = document.getElementById("AboutPage")
 let DataLoaderPage = document.getElementById("DataLoaderPage")
 
 function Home(){
-    HomePage.classList.remove("d-none")
-    ContactPage.classList.add("d-none")
-    PaymentPage.classList.add("d-none")
-    AboutPage.classList.add("d-none")
-    DataLoaderPage.classList.add("d-none")
+    //HomePage.classList.remove("d-none")
+    //ContactPage.classList.add("d-none")
+    //PaymentPage.classList.add("d-none")
+    //AboutPage.classList.add("d-none")
+    //DataLoaderPage.classList.add("d-none")
 }
 function Contact(){
-    HomePage.classList.add("d-none")
-    ContactPage.classList.remove("d-none")
-    PaymentPage.classList.add("d-none")
-    AboutPage.classList.add("d-none")
-    DataLoaderPageclassList.add("d-none")
+    //HomePage.classList.add("d-none")
+    //ContactPage.classList.remove("d-none")
+    //PaymentPage.classList.add("d-none")
+    //AboutPage.classList.add("d-none")
+    //DataLoaderPageclassList.add("d-none")
     //window.location="contactWeb.html"
+    window.open("contactWeb.html")
 }
 function Payment(){
-    HomePage.classList.add("d-none")
-    ContactPage.classList.add("d-none")
-    PaymentPage.classList.remove("d-none")
-    AboutPage.classList.add("d-none")
-    DataLoaderPage.classList.add("d-none")
+    //HomePage.classList.add("d-none")
+    //ContactPage.classList.add("d-none")
+    //PaymentPage.classList.remove("d-none")
+    //AboutPage.classList.add("d-none")
+    //DataLoaderPage.classList.add("d-none")
+    window.open("paymentpage.html")
 }
 function About(){
-    HomePage.classList.add("d-none")
-    ContactPage.classList.add("d-none")
-    PaymentPage.classList.add("d-none")
-    AboutPage.classList.remove("d-none")
-    DataLoaderPage.classList.add("d-none")
+    //HomePage.classList.add("d-none")
+    //ContactPage.classList.add("d-none")
+    //PaymentPage.classList.add("d-none")
+    //AboutPage.classList.remove("d-none")
+    //DataLoaderPage.classList.add("d-none")
+    window.open("aboutweb.html")
     
 }
 function DataLoader(){
-    HomePage.classList.add("d-none")
-    ContactPage.classList.add("d-none")
-    PaymentPage.classList.add("d-none")
-    AboutPage.classList.add("d-none")
-    DataLoaderPage.classList.remove("d-none")
+    //HomePage.classList.add("d-none")
+    //ContactPage.classList.add("d-none")
+    //PaymentPage.classList.add("d-none")
+    //AboutPage.classList.add("d-none")
+    //DataLoaderPage.classList.remove("d-none")
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
