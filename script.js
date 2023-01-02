@@ -55,7 +55,7 @@ function Contact(){
     //AboutPage.classList.add("d-none")
     //DataLoaderPageclassList.add("d-none")
     //window.location="contactWeb.html"
-    window.open("contactWeb.html")
+    window.location="contactWeb.html"
 }
 function Payment(){
     //HomePage.classList.add("d-none")
@@ -63,7 +63,7 @@ function Payment(){
     //PaymentPage.classList.remove("d-none")
     //AboutPage.classList.add("d-none")
     //DataLoaderPage.classList.add("d-none")
-    window.open("paymentpage.html")
+    window.location="paymentpage.html"
 }
 function About(){
     //HomePage.classList.add("d-none")
@@ -71,7 +71,7 @@ function About(){
     //PaymentPage.classList.add("d-none")
     //AboutPage.classList.remove("d-none")
     //DataLoaderPage.classList.add("d-none")
-    window.open("aboutweb.html")
+    window.location="aboutweb.html"
     
 }
 function DataLoader(){
