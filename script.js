@@ -81,6 +81,7 @@ function DataLoader(){
     //PaymentPage.classList.add("d-none")
     //AboutPage.classList.add("d-none")
     //DataLoaderPage.classList.remove("d-none")
+    window.location="dataloader.html"
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
