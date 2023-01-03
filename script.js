@@ -47,7 +47,7 @@ function Home(){
     //PaymentPage.classList.add("d-none")
     //AboutPage.classList.add("d-none")
     //DataLoaderPage.classList.add("d-none")
-    window.location="websitepage.html"
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
 }
 function Contact(){
     //HomePage.classList.add("d-none")
