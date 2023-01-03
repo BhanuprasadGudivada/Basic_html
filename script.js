@@ -55,7 +55,7 @@ function Contact(){
     //AboutPage.classList.add("d-none")
     //DataLoaderPageclassList.add("d-none")
     //window.location="contactWeb.html"
-    window.location="contactWeb.html"
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html"
 }
 function Payment(){
     //HomePage.classList.add("d-none")
