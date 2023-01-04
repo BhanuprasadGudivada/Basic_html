@@ -1,4 +1,4 @@
-function allowlogin(usermail) {
+function login() {
     //var a = document.form.usermail.value;
     var a = document.getElementById("usermail").value;
     var b;
@@ -177,7 +177,7 @@ function allowlogin(usermail) {
 
             alert("Logged in user id :" + b);
 
-            window.location = "https://dileepnalla.github.io/Basic_html/Index.HTML";
+            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
             aptrinsic('track', 'User Login');
 
         } else
