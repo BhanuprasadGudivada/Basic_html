@@ -1,32 +1,36 @@
 
   
-  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-NV5EY6EHZX0S-2");``
+})
 
-let InputElement=document.getElementById("InputElement") 
+(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-NV5EY6EHZX0S-2");
+
 function login(){
     var gsid;
-    if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com")){
+    
+    let InputElement=document.getElementById("InputElement") ;
+    if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com"))
+    {
         alert("Valid User");
         gsid= (InputElement.value).substr(6,4) ;
         //passing user and account objects:
-aptrinsic("identify",
-{
-//User Fields
-  "id": gsid, // Required for logged in app users
-  "email": InputElement.value,
-  "User Role": "Admin"
-  
-},
-{
-//Account Fields
-  "id":"GS2551", //Required
-  "name":"International Business Machine",
+        aptrinsic("identify",
+        {
+        //User Fields
+        "id": gsid, // Required for logged in app users
+        "email": InputElement.value,
+        "User Role": "Admin"
+        
+        },
+        {
+        //Account Fields
+        "id":"GS2551", //Required
+        "name":"International Business Machine",
 
-});
+        });
         window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
     else{
