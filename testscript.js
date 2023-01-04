@@ -1,6 +1,6 @@
 function login() {
     //var a = document.form.usermail.value;
-    var a = document.getElementById("usermail").value;
+    var a = document.getElementById("InputElement").value;
     var b;
     const myaccount = {
         a1: "1P02N2O3HJFZDMR72BQ1ITZ36JWWW92DAMFR",
