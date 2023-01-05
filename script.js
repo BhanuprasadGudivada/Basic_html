@@ -93,3 +93,7 @@ function widget(){
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
+function disp(){
+  dispaly=  document.getElementById("dispaly")
+  dispaly.classList.toggle("d-none")
+}
