@@ -87,6 +87,9 @@ function DataLoader(){
     //DataLoaderPage.classList.remove("d-none")
     window.location="dataloader.html"
 }
+function widget(){
+    window.location="widget.html"
+}
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
