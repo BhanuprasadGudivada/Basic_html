@@ -1,5 +1,3 @@
-
-  
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
@@ -22,7 +20,7 @@ function login(){
         //User Fields
         "id": gsid, // Required for logged in app users
         "email": InputElement.value,
-        "User Role": "Admin"
+        "UserRole": "Admin"
         
         },
         {
@@ -94,6 +92,6 @@ function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
 function disp(){
-  dispaly=  document.getElementById("dispaly")
+  dispaly=document.getElementById("dispaly")
   dispaly.classList.toggle("d-none")
 }
