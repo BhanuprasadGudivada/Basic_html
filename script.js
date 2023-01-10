@@ -7,13 +7,13 @@
 (window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-NV5EY6EHZX0S-2");
 
 function login(){
-    var gsid;
+  
     
     let InputElement=document.getElementById("InputElement") ;
     if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com"))
     {
-        alert("Valid User");
-        gsid= (InputElement.value).substr(6,4) ;
+      //  alert("Valid User");
+        var gsid= (InputElement.value).substr(6,4) ;
         //passing user and account objects:
         aptrinsic("identify",
         {
