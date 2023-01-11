@@ -30,7 +30,7 @@ function login(){
         
 
         });
-        alert("Valid user"):
+        alert("Valid user");
         window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
     else{
