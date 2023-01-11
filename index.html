@@ -16,6 +16,7 @@
         </div>
         <div>
             <div class="input-container d-flex flex-column justify-content-center p-3 ml-5 mr-5 text-center col-10 shadow">
+                <form onsubmit="login(this)">
                 <ul>
                     <div class="p-3 m-2">
                     <li style="font-weight: bold;">Email
@@ -29,7 +30,7 @@
                     </div>
                     <div class="m-3 d-flex flex-row justify-content-center">
                     
-                        <button class="btn btn-info" onclick="login()">Login</button>
+                        <button class="btn btn-info" type="submit">Login</button>
                         
                     </div>
                     <div class="icon-cont d-flex flex-row m-4 text-center">
@@ -38,7 +39,7 @@
                     </div>
 
                 </ul>
-                
+                </form>
             </div>
         </div>
         

@@ -6,7 +6,7 @@
 
 (window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-NV5EY6EHZX0S-2");
 
-function login(){
+function login(form){
   
     
     let InputElement=document.getElementById("InputElement") ;
@@ -31,7 +31,8 @@ function login(){
 
         });
         alert("Valid user");
-        window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
+        form.action="websitepage.html"
+        //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
     else{
         alert("Invaild Username, Please enter valid email ID")
