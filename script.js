@@ -31,7 +31,7 @@ function login(){
 
         });
         alert("Valid user"):
-       window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
+        window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
     else{
         alert("Invaild Username, Please enter valid email ID")
