@@ -98,3 +98,6 @@ function disp(){
   dispaly=document.getElementById("dispaly")
   dispaly.classList.toggle("d-none")
 }
+function TimeOut(){
+    aptrinsic("track","HomeTrack")
+}
