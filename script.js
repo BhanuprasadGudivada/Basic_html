@@ -44,9 +44,9 @@ function login(form){
         form.action="websitepage.html"
         //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
-    else if (email[:5]===("bhanu")){
+    /*else if (email[:5]===("bhanu")){
         form.action="websitepage.html"
-    }
+    }*/
     else{
         alert("Invaild Username, Please enter valid email ID")
 
