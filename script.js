@@ -29,7 +29,7 @@ function login(form){
         //User Fields
         "id": gsid, // Required for logged in app users
         "email": InputElement.value,
-        "UserRole": "Admin"
+        "UserRole":"Admin"
         
         },
         {
