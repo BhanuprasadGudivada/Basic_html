@@ -102,7 +102,7 @@ function DataLoader(){
     window.location="dataloader.html"
 }
 function widget(){
-    window.location="widget.html"
+    window.location="widgetpage.html"
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
