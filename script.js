@@ -19,6 +19,7 @@ function login(form){
   
     
     let InputElement=document.getElementById("InputElement") ;
+    let email=InputElement.value;
     if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com"))
     {
       //  alert("Valid User");
@@ -42,6 +43,9 @@ function login(form){
         alert("Valid user");
         form.action="websitepage.html"
         //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
+    }
+    else if (email[:5]=="bhanu"){
+        form.action="websitepage.html"
     }
     else{
         alert("Invaild Username, Please enter valid email ID")
