@@ -122,8 +122,8 @@ function paynow(){
     let Result= document.querySelector("#Result").value;
     let Output= Result
     document.querySelector(".result").textContent = Output
-    document.querySelector(".res1").textContent = Amount.value
-    aptrinsic("track","Transaction",{"amount":Amount.value,"Status":Result.value});
+    document.querySelector(".res1").textContent = parseInt(Amount.value)
+    aptrinsic("track","Transaction",{"amount":parseInt(Amount.value),"Status":Result.value});
     
 
 }
