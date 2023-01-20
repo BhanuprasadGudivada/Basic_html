@@ -119,11 +119,11 @@ function TimeOut(){
 conso
 function paynow(){
     let Amount = document.getElementById("Amount");
-    let Result=document.querySelector("#Result");
+    let Result= document.querySelector("#Result");
     let Output= Result.value
     document.querySelector(".result").textContent = Output
     document.querySelector(".res1").textContent = Amount.value
-
+    aptrinsic("track","Transaction",{"amount":Amount.value,"Status":Result.value});
     
 
 }
