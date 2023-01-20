@@ -114,3 +114,16 @@ function disp(){
 function TimeOut(){
     aptrinsic("track","HomeTrack")
 }
+
+//var Value= Result.options[Result.selectedIndex].text;
+conso
+function paynow(){
+    let Amount = document.getElementById("Amount");
+    let Result=document.querySelector("#Result");
+    let Output= Result.value
+    document.querySelector(".result").textContent = Output
+    document.querySelector(".res1").textContent = Amount.value
+
+    
+
+}

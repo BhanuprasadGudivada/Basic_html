@@ -42,19 +42,20 @@
                     <div class="d-flex flex-column m-2 p-3 ">
                         <p>
                         <label for="name">Enter your Amount:</label>
-                        <input class="input-class" id="inpamt" type="text" name="name" placeholder="Enter your amount">
+                        <input class="input-class" id="Amount" type="text" name="name" placeholder="Enter your amount">
                         </p>
                      <p>
-                        <label for = "Transaction"> Transaction type:</label>
-                        <select>
-                           <option value="">--select--</option>
-                          <option id="success" value="success">success</option>
-                          <option id="fail" value="Failure">Failure</option>
+                        <label for = "Transaction" id="transac"> Transaction type:</label>
+                        <select id="Result">
+                          <option >--select--</option>
+                          <option value="success">success</option>
+                          <option value="Failed">Failure</option>
                         </select>
                      </p>
                      <p>
-                       <input type="button" class="btn btn-info" id="btn1" value="Pay now">
+                       <input type="button" class="btn btn-info" id="btn1" value="Pay now" onclick="paynow()">
                       </p>
+                      <p class="p-2 text-center bg-info" id="Output" style="border-style: solid;"> Transaction <span class="res1"></span> is <span class="result"></span></p>
 
 
 
