@@ -125,7 +125,6 @@ function GetData(){
 }
 
 //var Value= Result.options[Result.selectedIndex].text;
-conso
 function paynow(){
     let Amount = document.getElementById("Amount");
     let Result= document.querySelector("#Result").value;
