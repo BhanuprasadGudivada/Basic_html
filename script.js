@@ -120,6 +120,9 @@ function disp(){
 function TimeOut(){
     aptrinsic("track","HomeTrack")
 }
+function GetData(){
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html"
+}
 
 //var Value= Result.options[Result.selectedIndex].text;
 conso
