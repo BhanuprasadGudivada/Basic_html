@@ -43,7 +43,7 @@ function login(form){
     
     let InputElement=document.getElementById("InputElement") ;
     let email=InputElement.value;
-    if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com"))
+    if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com") || (InputElement.value =="bhanugudivada0@gmail.com"))
     {
       //  alert("Valid User");
         var gsid= (InputElement.value).substr(6,4) ;
