@@ -74,7 +74,6 @@ function login(form){
     
     let InputElement=document.getElementById("InputElement") ;
     let email=InputElement.value;
-    if aptr
     if ((InputElement.value == "bhanu@gmail.com") || (InputElement.value =="user@gmail.com") || (InputElement.value == "demouser@gmail.com") || (InputElement.value =="bhanugudivada0@gmail.com"))
     {
       //  alert("Valid User");
