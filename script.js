@@ -163,6 +163,29 @@ function paynow(){
 
 }
 
+let bgColorInput = document.getElementById("bgColorInput")
+let fontColorInput = document.getElementById("fontColorInput")
+let fontSizeInput = document.getElementById("fontSizeInput")
+let paddingInput = document.getElementById("paddingInput")
+let fontWeightInput = document.getElementById("fontWeightInput")
+let borderRadiusInput = document.getElementById("borderRadiusInput")
+
+function apply() {
+    let bgcolor = bgColorInput.value
+    document.getElementById("customButton").style.backgroundColor = bgcolor
+    let fci = fontColorInput.value
+    document.getElementById("customButton").style.color = fci
+    let fsi = fontSizeInput.value
+    document.getElementById("customButton").style.fontSize = fsi
+    let fwi = fontWeightInput.value
+    document.getElementById("customButton").style.fontWeight = fwi
+    let pad = paddingInput.value
+    document.getElementById("customButton").style.padding = pad
+    let bdr = borderRadiusInput.value
+    document.getElementById("customButton").style.borderRadius = bdr
+
+}
+
 let getspringImage = document.getElementById("medImg")
 
 function spring() {
