@@ -183,8 +183,9 @@ function apply() {
     document.getElementById("customButton").style.padding = pad
     let bdr = borderRadiusInput.value
     document.getElementById("customButton").style.borderRadius = bdr
-
 }
+
+
 
 let getspringImage = document.getElementById("medImg")
 
