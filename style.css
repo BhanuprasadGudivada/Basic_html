@@ -108,6 +108,11 @@ import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wg
     font-weight: bold;
 }
 
+.nav-link{
+     font-wieght:bold;
+     background-color: darkblue;
+}
+
 .header {
     color: blue;
     font-family: Roboto;
