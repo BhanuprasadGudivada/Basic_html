@@ -171,6 +171,8 @@ let fontWeightInput = document.getElementById("fontWeightInput")
 let borderRadiusInput = document.getElementById("borderRadiusInput")
 
 function apply() {
+
+
     let bgcolor = bgColorInput.value
     document.getElementById("customButton").style.backgroundColor = bgcolor
     let fci = fontColorInput.value
