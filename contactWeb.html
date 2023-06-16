@@ -12,15 +12,30 @@
             <div class="container">
                 <h1 class="text-center">About page</h1>
             </div>
-            <div class="d-flex flex-row p-2 button-container ml-4 mr-4 ">
-                <a class="p-1 ml-2 btn" onclick="Home()">Home</a>
-                <a class="p-1 ml-2 btn" onclick="Contact()">Contact</a>
-                <a class="p-1 ml-2 btn" onclick="Payment()">Payment</a>
-                <a class="p-1 ml-2 btn" onclick="About()">About us</a>
-                <a class="p-1 ml-2 btn" onclick="DataLoader()">Data Loader</a>
-                <a class="p-1 ml-2 btn" onclick="widget()">Widget</a>
-                <a class="p-1 ml-2 btn" onclick="Login()">Log out</a>
-            </div>   
+            <div class="container">
+           
+            <nav class="navbar navbar-expand navbar-light bg-light">
+            <img src="https://ngs-space1.sgp1.digitaloceanspaces.com/am/uploads/mediaGallery/image/1660993978762.jpg-org" class="nav-image" />
+            <a class="navbar-brand header" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-info" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active d-flex flex-row justify-content-center bg-info">
+                        <a class="nav-link" onclick="Home()" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" onclick="Payment()">Payment</a>
+                        <a class="nav-link active" onclick="Contact()" href="#">Contact</a> 
+                        <a class="nav-link active" onclick="About()">About</a>
+                        <a class="nav-link active" onclick="DataLoader()">Data Loader</a>
+                        <a class="nav-link active" onclick="widget()">Widget</a>
+                        <a class="nav-link active" onclick="Login()">Logout</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+        </div>
     <div class="container ">
        <div class="container shadow d-flex flex-column justify-content-center col-6">
         <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-xs-img.png" id="seasonSmallImage" class="season-image d-inline d-md-none" />
