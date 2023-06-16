@@ -99,3 +99,24 @@ import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wg
 
 .custom-button {
     font-family: "Roboto";
+} 
+
+.nav-header {
+    color: red;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header {
+    color: blue;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-image {
+    height: 60px;
+}
+
+
