@@ -15,6 +15,25 @@
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-0UD7HOEJMZOK-2");
 
+
+(function(n, t, a, e, x) {
+    let i = "aptrinsic";
+    n[i] = n[i] || function() {
+            (n[i].q = n[i].q || []).push(arguments)
+        },
+        n[i].p = e, n[i].c = x;
+
+    let r = t.createElement("script");
+    r.async = !0;
+    r.src = a + "?a=" + e;
+
+    let c = t.getElementsByTagName("script")[0];
+    c.parentNode.insertBefore(r, c);
+})
+(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-0UD7HOEJMZOK-2", {
+    cssNonce: "r@nd0m"
+});
+
 /*(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
