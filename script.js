@@ -80,7 +80,7 @@ window['_fs_namespace'] = 'FS';
 function login(form){
 let InputElement=document.getElementById("InputElement") ;
     let email=InputElement.value; 
-    var mailid = /^([a-zA-Z0-9\.]+)@([a-zA-Z0-9])+. ([a-z]+)([a-z]+)?$/ 
+    var mailid = /^([a-zA-Z0-9\.]+)@([a-zA-Z0-9])+. ([a-z]+)([a-z]+)?$/ ;
     if (mailid.text(email))
     {
       //  alert("Valid User");
@@ -112,7 +112,7 @@ let InputElement=document.getElementById("InputElement") ;
         alert("Invaild Username, Please enter valid email ID")
 
     }
-}
+
 let HomePage = document.getElementById("HomePage")
 let ContactPage = document.getElementById("ContactPage")
 let PaymentPage = document.getElementById("PaymentPage")
