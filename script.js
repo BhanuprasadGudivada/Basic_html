@@ -104,6 +104,7 @@ let InputElement=document.getElementById("InputElement") ;
         alert("Welcome");
         form.action="websitepage.html"
         //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
+        return true
     }
     /*else if (email[:5]===("bhanu")){
         form.action="websitepage.html"
