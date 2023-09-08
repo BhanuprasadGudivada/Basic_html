@@ -78,70 +78,40 @@ window['_fs_namespace'] = 'FS';
 
 
 function login(form){
-let a = document.getElementById("user").value;
-    var b="";
-      if(a){
-        b= a.substr(0,5);
-        var id = b;
-        //const emaillist= emailliststore.slice();
-        const emaillist=getEmails().slice();
+let InputElement=document.getElementById("InputElement") ;
+    let email=InputElement.value; 
+    var mailid = /^([a-zA-Z0-9\.]+)@([a-zA-Z0-9])+. ([a-z]+)([a-z]+)?$/ 
+    if (mailid.text(email))
+    {
+      //  alert("Valid User");
+        var gsid= (InputElement.value).substr(6,4) ;
         //passing user and account objects:
-        if(aptrinsic.init != undefined){
-          if(!emaillist.includes(a)){
-            emaillist.push(a);
-            storeEmailinLocalStorage(a);
-          }
-          var EmailAppend= emaillist.toString()
         aptrinsic("identify",
-            {
-                //User Fields
-                "id": b, // Required for logged in app users
-                "email": a,
-                "userrole": "Admin",
-                "EmailAppend":EmailAppend
-            
-            },
-            {
-                //Account Fields
-                "id": "GSID-1234", //Required
-                "name": "International Business Machine"
-            });
-          }
-            globalcontext();
-           alert("Valid User");
-            form.action = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
-           alert("Logged in user id :"+b);
-           //emailliststore = emaillist.slice();
-           //return emailliststore
+        {
+        //User Fields
+        "id": gsid, // Required for logged in app users
+        "email": InputElement.value,
+        "UserRole":"Admin"
 
-        
+        },
+        {
+        //Account Fields
+        "id":"GS2551", //Required
+        "name":"Gainsight",
+
+
+        });
+        alert("Welcome");
+        form.action="websitepage.html"
+        //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
     }
-    else {
-        alert("Please enter a valid username");
+    /*else if (email[:5]===("bhanu")){
+        form.action="websitepage.html"
+    }*/
+    else{
+        alert("Invaild Username, Please enter valid email ID")
+
     }
-    return b;
-}
-function storeEmailinLocalStorage(Email) {
-  let emails;
-  if (localStorage.getItem('emails') === null) {
-    emails = [];
-  } else {
-    emails = JSON.parse(localStorage.getItem('emails'));
-  }
-  emails.push(Email);
-  localStorage.setItem('emails', JSON.stringify(emails));
-}
-
-function getEmails() {
-  let emails;
-  if (localStorage.getItem('emails') === null) {
-      emails = [];
-  } else {
-      emails = JSON.parse(localStorage.getItem('emails'));
-  }
-  return emails;
-}
-
 let HomePage = document.getElementById("HomePage")
 let ContactPage = document.getElementById("ContactPage")
 let PaymentPage = document.getElementById("PaymentPage")
