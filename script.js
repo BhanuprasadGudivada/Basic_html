@@ -112,6 +112,7 @@ let InputElement=document.getElementById("InputElement") ;
         alert("Invaild Username, Please enter valid email ID")
 
     }
+}
 let HomePage = document.getElementById("HomePage")
 let ContactPage = document.getElementById("ContactPage")
 let PaymentPage = document.getElementById("PaymentPage")
