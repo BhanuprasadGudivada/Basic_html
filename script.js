@@ -78,42 +78,58 @@ window['_fs_namespace'] = 'FS';
 
 
 function login(form){
-let InputElement=document.getElementById("InputElement") ;
-    let email=InputElement.value; 
-    var mailid = /^([a-zA-Z0-9\.]+)@([a-zA-Z0-9])+. ([a-z]+)([a-z]+)?$/ ;
-    if (mailid.text(email))
-    {
-      //  alert("Valid User");
-        var gsid= (InputElement.value).substr(6,4) ;
-        //passing user and account objects:
+let a=document.getElementById("InputElement").value ;
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+     var b ="";
+    if (a ==="admin@gmail.com" || a* ==="@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
+        b= a.substr(6,3);
+        var id = b;
+
+        
         aptrinsic("identify",
-        {
-        //User Fields
-        "id": gsid, // Required for logged in app users
-        "email": InputElement.value,
-        "UserRole":"Admin"
-
-        },
-        {
-        //Account Fields
-        "id":"GS2551", //Required
-        "name":"Gainsight",
-
-
-        });
-        alert("Welcome");
-        form.action="websitepage.html"
-        //window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
-        return true
+            {
+                //User Fields
+                "id": id, 
+                "email": a,
+                "userrole": "Admin",
+            },
+            {
+                //Account Fields
+                "id": "GSID-12345", //Required
+                "name": "Gainsight Internal"
+            });
+           alert("Valid User");
+            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
+          
+        
     }
-    /*else if (email[:5]===("bhanu")){
-        form.action="websitepage.html"
-    }*/
-    else{
-        alert("Invaild Username, Please enter valid email ID")
+     else if(a.match(mailformat)){ 
+         b= a.substr(6,4);
+        var id = b;
 
+        
+        aptrinsic("identify",
+            {
+                //User Fields
+                "id": id, 
+                "email": a,
+                "userrole": "Admin",
+            },
+            {
+                //Account Fields
+                "id": "GSID-12345", //Required
+                "name": "Gainsight"
+            });
+           alert("Valid User");
+            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
+          
+        
+    }   
+    else {
+        alert("Please enter a valid username");
     }
-
+    return b;
+}
 let HomePage = document.getElementById("HomePage")
 let ContactPage = document.getElementById("ContactPage")
 let PaymentPage = document.getElementById("PaymentPage")
