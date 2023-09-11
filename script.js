@@ -98,8 +98,8 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
                 "id": "GSID-12345", //Required
                 "name": "Gainsight Internal"
             });
-           alert("Valid User");
-            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
+           alert("Valid User Welcome to App");
+            window.location = "websitepage.html";
           
         
     }
