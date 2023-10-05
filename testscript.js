@@ -112,5 +112,5 @@ function DataLoader(){
   window.location="dataloader.html"
 }
 function Login(){
-  window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
+  window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
 }
