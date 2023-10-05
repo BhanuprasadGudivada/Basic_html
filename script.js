@@ -153,9 +153,9 @@ function About(){
     window.location="aboutweb.html"
     
 }
-function DataLoader(){
+/*function DataLoader(){
     
-    window.location="dataloader.html"
+    window.location="dataloader.html"*/
 }
 function widget(){
     window.location="widgetpage.html"
