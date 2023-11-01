@@ -5,23 +5,6 @@
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-OULYAMSSGJ8M-2");
 
 
-(function(n, t, a, e, x) {
-    let i = "aptrinsic";
-    n[i] = n[i] || function() {
-            (n[i].q = n[i].q || []).push(arguments)
-        },
-        n[i].p = e, n[i].c = x;
-
-    let r = t.createElement("script");
-    r.async = !0;
-    r.src = a + "?a=" + e;
-
-    let c = t.getElementsByTagName("script")[0];
-    c.parentNode.insertBefore(r, c);
-})
-(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-OULYAMSSGJ8M-2", {
-    cssNonce: "nonce-r@ndom"
-});
 
 /*(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -82,7 +65,7 @@ let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
      var b ="";
     if (a ==="admin@gmail.com" || a === "testuser@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
-        b= a.substr(6,3);
+        b= a.substr(5,2);
         var id = b;
 
         
@@ -135,6 +118,8 @@ let ContactPage = document.getElementById("ContactPage")
 let PaymentPage = document.getElementById("PaymentPage")
 let AboutPage = document.getElementById("AboutPage")
 let DataLoaderPage = document.getElementById("DataLoaderPage")
+let WidgetPage= document.getElementById("WidgetPage")
+
 
 function Home(){
    
