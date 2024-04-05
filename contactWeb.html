@@ -4,7 +4,79 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+        <style>
+      body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .filters-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .filter-section {
+      margin-bottom: 20px;
+    }
+
+    .filter-label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .dropdown,
+    .input-field {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .dropdown:focus,
+    .input-field:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+
+    .dropdown-option {
+      padding: 10px 15px;
+    }
+
+    .dropdown-option:hover {
+      background-color: #e9ecef;
+    }
+
+    .apply-button {
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .apply-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
     </head>
     <body>
      <div>
@@ -36,45 +108,67 @@
             </div>
         </nav>
         </div>
-    <div class="container ">
-       <div class="container shadow d-flex flex-column justify-content-center col-6">
-        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-xs-img.png" id="seasonSmallImage" class="season-image d-inline d-md-none" />
-        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-md-img.png" id="seasonMediumImage" class="season-image d-none d-md-inline" />
-         </div>
-        <div class="d-flex flex-row justify-content-center mt-4">
-            <button class="button spring-button" onclick="spring()" id="springBtn">Spring</button>
-            <button class="button summer-button" onclick="summer()" id="summerBtn">Summer</button>
-            <button class="button autumn-button" onclick="autumn()" id="autumnBtn">Autumn</button>
-            <button class="button winter-button" onclick="winter()" id="winterBtn">Winter</button>
-        </div>
-    </div>
     <div class="container">
-     <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username"><br><br>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password"><br><br>
-
-        <label for="remember">Remember me:</label>
-        <input type="checkbox" id="remember" name="remember"><br><br>
-
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-        <label for="upload">Upload File:</label>
-        <input type="file" id="upload" name="upload"><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+  <div class="filters-container bg-success">
+    <div class="filter-section">
+      <label for="category" class="filter-label">Category:</label>
+      <select id="category" class="dropdown">
+        <option value="all" class="dropdown-option">All Categories</option>
+        <option value="electronics" class="dropdown-option">Electronics</option>
+        <option value="clothing" class="dropdown-option">Clothing</option>
+        <option value="books" class="dropdown-option">Books</option>
+        <!-- Add more options as needed -->
+      </select>
     </div>
+
+    <div class="filter-section bg-info">
+      <label for="price-range" class="filter-label">Price Range:</label>
+      <input type="number" id="min-price" class="input-field" placeholder="Min Price">
+      <input type="number" id="max-price" class="input-field" placeholder="Max Price">
+    </div>
+
+    <div class="filter-section">
+      <label for="brand" class="filter-label">Brand:</label>
+      <input type="text" id="brand" class="input-field" placeholder="Enter Brand">
+    </div>
+
+    <div class="filter-section">
+      <label for="color" class="filter-label">Color:</label>
+      <select id="color" class="dropdown">
+        <option value="all" class="dropdown-option">All Colors</option>
+        <option value="red" class="dropdown-option">Red</option>
+        <option value="blue" class="dropdown-option">Blue</option>
+        <option value="green" class="dropdown-option">Green</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <div class="filter-section">
+      <label for="size" class="filter-label">Size:</label>
+      <select id="size" class="dropdown">
+        <option value="all" class="dropdown-option">All Sizes</option>
+        <option value="s" class="dropdown-option">Small</option>
+        <option value="m" class="dropdown-option">Medium</option>
+        <option value="l" class="dropdown-option">Large</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <div class="filter-section">
+      <label for="rating" class="filter-label">Rating:</label>
+      <select id="rating" class="dropdown">
+        <option value="all" class="dropdown-option">All Ratings</option>
+        <option value="5" class="dropdown-option">5 Stars</option>
+        <option value="4" class="dropdown-option">4 Stars & Up</option>
+        <option value="3" class="dropdown-option">3 Stars & Up</option>
+        <!-- Add more options as needed -->
+      </select>
+    </div>
+
+    <button class="apply-button">Apply Filters</button>
+  </div>
+</div>
+
         
   </div>
        
