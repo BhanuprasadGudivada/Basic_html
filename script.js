@@ -152,7 +152,7 @@ function widget(){
     window.location="widgetpage.html"
     aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
 }
-function LoginPageLoad(){
+function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
 function disp(){
