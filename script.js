@@ -96,7 +96,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //User Fields
                 "id": id, 
                 "email": a,
-                "userrole": "Admin",
+                "userrole": "User",
             },
             {
                 //Account Fields
@@ -151,7 +151,7 @@ function widget(){
     window.location="widgetpage.html"
     aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
 }
-function Login(){
+function LoginPageLoad(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
 function disp(){
