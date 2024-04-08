@@ -60,7 +60,7 @@ window['_fs_namespace'] = 'FS';
 
 
 
-function LoginPageLoad(form){
+function login(form){
 let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
      var b ="";
