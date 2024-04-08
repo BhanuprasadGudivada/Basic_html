@@ -81,6 +81,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 "id": "GSID-12345", //Required
                 "name": "Gainsight Internal"
             });
+            globalcontext();
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
            alert("Logged in user id :"+b);
@@ -103,6 +104,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 "id": "GSID-12345", //Required
                 "name": "Gainsight"
             });
+           globalcontext();
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
            alert("Logged in user id :"+b);
