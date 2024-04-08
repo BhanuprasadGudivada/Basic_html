@@ -74,17 +74,17 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //User Fields
                 "id": id, 
                 "email": a,
-                "userrole": "Admin",
+                "userrole": "Admin"
             },
             {
                 //Account Fields
                 "id": "GSID-12345", //Required
-                "name": "Gainsight Internal"
+                "name": "Gainsight Admin"
             });
             
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
-           alert("Logged in user id :"+b);
+           alert("Logged in user id :"+b+"Admin");
         
     }
      else if(a.match(mailformat)){ 
@@ -97,12 +97,12 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //User Fields
                 "id": id, 
                 "email": a,
-                "userrole": "User",
+                "userrole": "User"
             },
             {
                 //Account Fields
                 "id": "GSID-12345", //Required
-                "name": "Gainsight"
+                "name": "Gainsight internal"
             });
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
