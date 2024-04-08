@@ -74,7 +74,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //User Fields
                 "id": id, 
                 "email": a,
-                "userrole": "Admin"
+                "UserRole": "Admin"
             },
             {
                 //Account Fields
@@ -97,7 +97,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //User Fields
                 "id": id, 
                 "email": a,
-                "userrole": "User"
+                "UserRole": "User"
             },
             {
                 //Account Fields
