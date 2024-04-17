@@ -202,7 +202,9 @@ function apply() {
     document.getElementById("customButton").style.borderRadius = bdr
 }
 
-
+function ApplyFeedBack() {
+aptrinsic('send', 'feedback', {'category' : 'Feature request', 'subject' : 'Gainsight PX User Feedback API', 'description' : 'Gainsight PX User feedback API allows you to track your user's feedback either from the Contact Us icon or Knowledge Center Bot. Once the user submits the feedback, PX automatically receives the feedback with the help of this API.'});
+}
 
 let getspringImage = document.getElementById("medImg")
 
