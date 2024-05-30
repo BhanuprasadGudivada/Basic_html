@@ -88,7 +88,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
         
     }
      else if(a.match(mailformat)){ 
-         b= a.substr(6,4);
+         b= a.substr(1,4);
         var id = b;
 
         
@@ -130,27 +130,27 @@ function Home(){
 function Contact(){
    
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html"
-    aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
+    aptrinsic('set', 'globalContext', {"page":"contact"});
 }
 function Payment(){
  
     window.location="paymentpage.html"
-    aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
+    aptrinsic('set', 'globalContext', {"page":"payment"});
 }
 function About(){
    
     window.location="aboutweb.html"
-    aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
+    aptrinsic('set', 'globalContext', {"page":"anndroid"});
     
 }
 function DataLoader(){
     
     window.location="dataloader.html"
-    aptrinsic('set', 'globalContext', {"VersionID":"KC2", "name":"Salesforce"});
+    aptrinsic('set', 'globalContext', {"page":"salesforce"});
 }
 function widget(){
     window.location="widgetpage.html"
-    aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
+    aptrinsic('set', 'globalContext', {"page":"salesforce"});
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
