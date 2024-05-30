@@ -124,32 +124,32 @@ let WidgetPage= document.getElementById("WidgetPage")
 
 function Home(){
    
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html"
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
     aptrinsic('set', 'globalContext', {"VersionID":"KC1", "name":"Salesforce"});
 }
 function Contact(){
    
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html"
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
     aptrinsic('set', 'globalContext', {"page":"contact"});
 }
 function Payment(){
  
-    window.location="paymentpage.html"
+    window.location="paymentpage.html" ;
     aptrinsic('set', 'globalContext', {"page":"payment"});
 }
 function About(){
    
-    window.location="aboutweb.html"
+    window.location="aboutweb.html" ;
     aptrinsic('set', 'globalContext', {"page":"anndroid"});
     
 }
 function DataLoader(){
     
-    window.location="dataloader.html"
+    window.location="dataloader.html" ;
     aptrinsic('set', 'globalContext', {"page":"salesforce"});
 }
 function widget(){
-    window.location="widgetpage.html"
+    window.location="widgetpage.html" ;
     aptrinsic('set', 'globalContext', {"page":"salesforce"});
 }
 function Login(){
