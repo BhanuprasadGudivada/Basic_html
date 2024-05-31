@@ -150,9 +150,6 @@ function DataLoader(){
 }
 function widget(){
     window.location="widgetpage.html" ;
-  setTimeout(function() {
-  PX('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
-}, 15000);
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
