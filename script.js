@@ -174,6 +174,12 @@ function GetData(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html"
 }
 
+function upload(){
+aptrinsic('kcb', 'open', {
+});
+
+}
+
 //var Value= Result.options[Result.selectedIndex].text;
 function paynow(){
     let Amount = document.getElementById("Amount");
