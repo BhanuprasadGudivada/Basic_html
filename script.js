@@ -64,8 +64,9 @@ function login(form){
 let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
      var b ="";
+     var c= len(a);
     if (a ==="admin@gmail.com" || a === "testuser@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
-        b= a.substr(4,2);
+        b= a.substr(4,c-1);
         var id = b;
 
         
@@ -78,17 +79,17 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             },
             {
                 //Account Fields
-                "id": "GSID-12345", //Required
+                "id": "GS2551", //Required
                 "name": "Gainsight Admin"
             });
             
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
-           alert("Logged in user id :"+b+"Admin");
+           alert("Logged in user id :"+b+"Admin Login Succesful");
         
     }
      else if(a.match(mailformat)){ 
-         b= a.substr(1,4);
+         b= a.substr(2,c-1);
         var id = b;
 
         
@@ -106,7 +107,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             });
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
-           alert("Logged in user id :"+b);
+           alert("Logged in user id :"+b+"Login Succesful");
         
     }   
     else {
