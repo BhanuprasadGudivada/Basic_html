@@ -188,7 +188,7 @@ function paynow(){
     document.querySelector(".result").textContent = Output
     document.querySelector(".res1").textContent = parseInt(Amount.value)
     aptrinsic("track","Transaction",{"amount":parseInt(Amount.value),"Status":Output});
-    alert("Transaction"+Amount.value+Output);
+    alert("Transaction"+" "+Amount.value+" "+Output);
 
 }
 
