@@ -64,9 +64,8 @@ function login(form){
 let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
      var b ="";
-     var c= len(a);
     if (a ==="admin@gmail.com" || a === "testuser@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
-        b= a.substr(2,6);
+        b= a.substr(2,4);
         var id = b;
 
         
@@ -89,7 +88,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
         
     }
      else if(a.match(mailformat)){ 
-         b= a.substr(1,8);
+         b= a.substr(1,6);
         var id = b;
 
         
