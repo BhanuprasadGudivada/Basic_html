@@ -31,3 +31,10 @@ nav li a {
 .content {
   padding: 20px;
 }
+.hover-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
+}
