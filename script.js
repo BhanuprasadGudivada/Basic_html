@@ -2,7 +2,7 @@
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-OULYAMSSGJ8M-2-2", {localStorageCookie: true},{widgetEnabled: false});
+})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-OULYAMSSGJ8M-2", {localStorageCookie: true},{widgetEnabled: false});
 
 
 
@@ -84,7 +84,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
-           alert("Logged in user id :"+b+"Admin Login Succesful in staging");
+           alert("Logged in user id :"+b+"Admin Login Succesful in production");
         
     }
      else if(a.match(mailformat)){ 
@@ -106,7 +106,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             });
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
-           alert("Logged in user id :"+b+"Login Succesful in staging");
+           alert("Logged in user id :"+b+"Login Succesful in production");
         
     }   
     else {
