@@ -86,31 +86,9 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
         
-    }
-     else if(a.match(mailformat)){ 
-         b= a.substr(1,6);
-        var id = b;
-
-        
-        aptrinsic("identify",
-            {
-                //User Fields
-                "id": id, 
-                "email": a,
-                "UserRole": "User"
-            },
-            {
-                //Account Fields
-                "id": "GSID-12345", //Required
-                "name": "Gainsight internal"
-            });
-           alert("Valid User");
-           window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
-           alert("Logged in user id :"+b+"Login Succesful in production");
-        
     }  
 
-   else if(a ==="adminIdentify@gmail.com" || a === "Identifyaccount@gmail.com"){ 
+   else if(a ==="admindemo@gmail.com" || a === "Identifyaccount@gmail.com"){ 
          b= a.substr(1,6);
         var id = b;
 
@@ -131,8 +109,30 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html";
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
         
-    }    
-    else {
+    }
+
+     else if(a.match(mailformat)){ 
+         b= a.substr(1,6);
+        var id = b;
+
+        
+        aptrinsic("identify",
+            {
+                //User Fields
+                "id": id, 
+                "email": a,
+                "UserRole": "User"
+            },
+            {
+                //Account Fields
+                "id": "GSID-12345", //Required
+                "name": "Gainsight internal"
+            });
+           alert("Valid User");
+           window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
+           alert("Logged in user id :"+b+"Login Succesful in production");    
+     }
+else {
         alert("Please enter a valid username");
     }
     setTimeout(function() {
