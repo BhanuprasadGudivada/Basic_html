@@ -123,8 +123,8 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             },
             {
                 //Account Fields
-                "name": "Gainsight Identify"
-                "plan": "Premieum"
+                "name": "Gainsight Identify",
+                "plan": "Premieum",
                 "timeZone": "IN"
             });
            alert("Valid User");
