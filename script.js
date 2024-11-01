@@ -119,7 +119,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
         aptrinsic("identify",
             {
                 //User Fields
-                "id": id, 
+                "id": a, 
                 "email": a,
                 "UserRole": "User"
             },
