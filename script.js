@@ -136,7 +136,7 @@ else {
         alert("Please enter a valid username");
     }
     setTimeout(function() {
-  PX('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
+  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
 }, 10000);
 
     return b;
@@ -211,7 +211,7 @@ function paynow(){
     document.querySelector(".result").textContent = Output
     document.querySelector(".res1").textContent = parseInt(Amount.value)
     aptrinsic("track","UpdatePaymentAtrribute",{"PaymentAmount":parseInt(Amount.value),"PaymentStatus":Output});
-    /*aptrinsic('set', 'user',{"PaymentAmount":parseInt(Amount.value),"PaymentStatus":Output});*/
+    aptrinsic('set', 'user',{"PaymentAmount":parseInt(Amount.value),"PaymentStatus":Output});
     alert("Transaction"+" "+Amount.value+" "+Output);
 
 }
