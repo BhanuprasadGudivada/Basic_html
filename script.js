@@ -180,7 +180,7 @@ function widget(){
 }
 
 setTimeout(function() {
-  PX('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
+  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
 }, 10000);
 
 function Login(){
