@@ -210,7 +210,7 @@ function paynow(){
     let Output= Result.value
     document.querySelector(".result").textContent = Output
     document.querySelector(".res1").textContent = parseInt(Amount.value)
-    aptrinsic("track","Transaction",{"amount":parseInt(Amount.value),"Status":Output});
+    aptrinsic("track","UpdatePaymentAtrribute",{"PaymentAmount":parseInt(Amount.value),"PaymentStatus":Output});
     alert("Transaction"+" "+Amount.value+" "+Output);
 
 }
