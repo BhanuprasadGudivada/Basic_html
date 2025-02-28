@@ -201,6 +201,10 @@ function upload(){
 aptrinsic('kcb', 'open', {
 });
 
+function request(){
+aptrinsic('track', 'Request ID', {"Name":"Welcome to Ecommerce Website"})
+}
+
 }
 
 //var Value= Result.options[Result.selectedIndex].text;
