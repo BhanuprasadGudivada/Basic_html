@@ -198,13 +198,11 @@ function GetData(){
 }
 
 function upload(){
-aptrinsic('kcb', 'open', {
-});
+aptrinsic('kcb', 'open', {});
+}
 
 function request(){
 aptrinsic("track","RequestButton",{"Name":"Welcome to Ecommerce Website"});
-}
-
 }
 
 //var Value= Result.options[Result.selectedIndex].text;
