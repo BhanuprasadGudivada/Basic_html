@@ -202,7 +202,7 @@ aptrinsic('kcb', 'open', {
 });
 
 function request(){
-aptrinsic("track","RequestButton",{"Name":"Welcome to Ecommerce Website"})
+aptrinsic("track","RequestButton",{"Name":"Welcome to Ecommerce Website"});
 }
 
 }
