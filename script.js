@@ -180,8 +180,7 @@ function widget(){
 }
 
 setTimeout(function() {
-  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
-}, 10000);
+  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();}
 
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
