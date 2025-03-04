@@ -170,15 +170,11 @@ function DataLoader(){
     
     window.location="dataloader.html" ;
     aptrinsic('set', 'globalContext', {"page":"salesforce"});
-aptrinsic('kcb', 'open', {});
+    aptrinsic('kcb', 'open', {});
 }
 function widget(){
     window.location="widgetpage.html" ;
 }
-
-setTimeout(function() {
-  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();}
-
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
 }
