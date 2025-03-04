@@ -135,10 +135,6 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
 else {
         alert("Please enter a valid username");
     }
-    setTimeout(function() {
-  aptrinsic('7b1d6269-3dca-455f-8782-9db565b29e7c').show();
-}, 10000);
-
     return b;
 }
 let HomePage = document.getElementById("HomePage")
@@ -174,6 +170,7 @@ function DataLoader(){
     
     window.location="dataloader.html" ;
     aptrinsic('set', 'globalContext', {"page":"salesforce"});
+aptrinsic('kcb', 'open', {});
 }
 function widget(){
     window.location="widgetpage.html" ;
