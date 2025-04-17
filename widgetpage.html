@@ -49,17 +49,51 @@
         </div>
       </div>
    
-  <div class="container">
-<div id="Reddraggable" class="ui-widget-content ">
-    <p>Drag me around</p>
+  <div class="container" style="background-color:gery;">
+       <div id="Reddraggable" class="ui-widget-content ">
+           <p>Drag me around</p>
+       </div>
+       <div id="Greendraggable" class="ui-widget-content bg-success">
+           <p>Drag me around</p>
+       </div>
+      <div id="Bluedraggable" style="" class="ui-widget-content bg-info">
+          <p>Drag me around</p> no
+      </div>
   </div>
-  <div id="Greendraggable" class="ui-widget-content bg-success">
-    <p>Drag me around</p>
+
+<div style="font-family: sans-serif; padding: 20px;">
+  <h2 style="text-align: center;">My To-Do List</h2>
+
+  <div style="margin-bottom: 10px;">
+    <label style="display: flex; align-items: center;">
+      <input type="checkbox" id="task1" style="margin-right: 10px;" onchange="updateTaskStyle('task1', this.checked)">
+      <span id="task1-text" style="text-decoration: none;">Buy groceries</span>
+    </label>
   </div>
-  <div id="Bluedraggable" style="" class="ui-widget-content bg-info">
-    <p>Drag me around</p> no
-   </div>
+
+  <div style="margin-bottom: 10px;">
+    <label style="display: flex; align-items: center;">
+      <input type="checkbox" id="task2" style="margin-right: 10px;" onchange="updateTaskStyle('task2', this.checked)">
+      <span id="task2-text" style="text-decoration: none;">Finish payment</span>
+    </label>
   </div>
+
+    <div style="margin-bottom: 10px;">
+    <label style="display: flex; align-items: center;">
+      <input type="checkbox" id="task3" style="margin-right: 10px;" onchange="updateTaskStyle('task3', this.checked)">
+      <span id="task3-text" style="text-decoration: none;">Add to cart</span>
+    </label>
+  </div>
+
+    <div style="margin-bottom: 10px;">
+    <label style="display: flex; align-items: center;">
+      <input type="checkbox" id="task4" style="margin-right: 10px;" onchange="updateTaskStyle('task4', this.checked)">
+      <span id="task4-text" style="text-decoration: none;">UPI payment</span>
+    </label>
+  </div>
+
+</div>
+
    
    
   </body>
