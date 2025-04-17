@@ -297,3 +297,16 @@ navLinks.forEach(link => {
     link.style.color = '#333';
   });
 });
+
+const checkbox = document.getElementById('myCheckbox');
+  const statusDisplay = document.getElementById('checkboxStatus');
+
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      statusDisplay.textContent = 'Checkbox is: checked';
+      statusDisplay.style.color = 'green'; // Inline styling for checked state.
+    } else {
+      statusDisplay.textContent = 'Checkbox is: unchecked';
+      statusDisplay.style.color = 'red'; // Inline styling for unchecked state.
+    }
+  });
