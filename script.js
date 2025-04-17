@@ -298,15 +298,35 @@ navLinks.forEach(link => {
   });
 });
 
-const checkbox = document.getElementById('myCheckbox');
-  const statusDisplay = document.getElementById('checkboxStatus');
+function updateTaskStyle(taskId, checked) {
+  const taskText = document.getElementById(taskId + '-text');
+  if (checked) {
+    taskText.style.textDecoration = 'line-through';
+    taskText.style.color = 'gray';
+  } else {
+    taskText.style.textDecoration = 'none';
+    taskText.style.color = 'black';
+  }
+}
 
-  checkbox.addEventListener('change', function() {
-    if (this.checked) {
-      statusDisplay.textContent = 'Checkbox is: checked';
-      statusDisplay.style.color = 'green'; // Inline styling for checked state.
-    } else {
-      statusDisplay.textContent = 'Checkbox is: unchecked';
-      statusDisplay.style.color = 'red'; // Inline styling for unchecked state.
-    }
-  });
+//Optional: To keep the checkbox state persistent after page reload.
+document.addEventListener('DOMContentLoaded', function() {
+    const tasks = ['task1', 'task2', 'task3', 'task4'];
+    tasks.forEach(task => {
+        const checkbox = document.getElementById(task);
+        if (checkbox && localStorage.getItem(task)) {
+            checkbox.checked = localStorage.getItem(task) === 'true';
+            updateTaskStyle(task, checkbox.checked);
+        }
+    });
+});
+
+window.addEventListener('beforeunload', function() {
+    const tasks = ['task1', 'task2', 'task3', 'task4'];
+    tasks.forEach(task => {
+        const checkbox = document.getElementById(task);
+        if (checkbox) {
+            localStorage.setItem(task, checkbox.checked);
+        }
+    });
+});
