@@ -298,18 +298,20 @@ navLinks.forEach(link => {
   });
 });
 
+
+
+
 function updateTaskStyle(taskId, checked) {
   const taskText = document.getElementById(taskId + '-text');
   if (checked) {
-    taskText.style.textDecoration = 'line-through';
-    taskText.style.color = 'gray';
+    taskText.classList.remove('unchecked');
+    taskText.classList.add('checked');
   } else {
-    taskText.style.textDecoration = 'none';
-    taskText.style.color = 'black';
+    taskText.classList.remove('checked');
+    taskText.classList.add('unchecked');
   }
 }
 
-//Optional: To keep the checkbox state persistent after page reload.
 document.addEventListener('DOMContentLoaded', function() {
     const tasks = ['task1', 'task2', 'task3', 'task4'];
     tasks.forEach(task => {
