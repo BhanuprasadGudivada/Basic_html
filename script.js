@@ -238,6 +238,10 @@ function ApplyFeedBack() {
 aptrinsic('send', 'feedback', {'category' : 'Feature request', 'subject' : 'Gainsight PX User Feedback API', 'description' : 'Gainsight PX User feedback API allows you to track your users feedback either from the Contact Us icon or Knowledge Center Bot. Once the user submits the feedback, PX automatically receives the feedback with the help of this API.'});
 }
 
+function SubmitNow(){
+aptrinsic('send', 'feedback', {'category' : document.getElementById('category').value, 'subject' : document.getElementById('subject').value, 'description' : document.getElementById('description').value});
+}
+
 let getspringImage = document.getElementById("medImg")
 
 function spring() {
