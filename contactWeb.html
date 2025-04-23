@@ -168,9 +168,71 @@
     <button class="apply-button" onclick="ApplyFeedBack()">Apply Filters</button>
   </div>
 </div>
+{{User.email|null}}
+<meta charset="utf-8">
+<div style="
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 5px;">
+    <p style="text-align: center; font-size: 18px; font-weight: 500; color: #19232f; margin-bottom: 10px;">&nbsp;We&#39;d love to hear from you
+        <br>
+        <br>Please choose the Category:&nbsp;</p>
+    <select id="category" style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">&nbsp; &nbsp; &nbsp; &nbsp;
+        <option id="issue" value="Issue">Issue</option>
+        <option id="fr" value="Feature request">Feature request</option>
+        <option id="GF" value="General feedback">General Feedback</option>
+        <option id="bph" value="Best practice help">Best Practice help</option>&nbsp;</select>
+    <div>
+        <label for="subject" style="display: block; margin-bottom: 5px;">Subject:</label>
+        <input type="text" id="subject" name="Subject" placeholder="Please enter your subject" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;" value="">
+    </div>
+    <div>
+        <label for="description" style="display: block; margin-bottom: 5px;">Description:</label>
+        <textarea id="description" name="Description" placeholder="Enter a description of your issue" style="width: 100%; height: 90px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;" value=""></textarea>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+        <br>
+    </div></div>
+
+<div class="container">
+<div class="CButtons" style="
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;">
+    <br>
+    <p>
+        <br>
+    </p>
+    <p>
+</div>
+<p><span style="color: #000;">&nbsp;</span> <span class="apt-custom-button">&nbsp;<a href="" style="text-decoration: none; color: inherit;"></a></span></p>
+<button onclick="aptrinsic('send', 'feedback', {'category' : document.getElementById('category').value, 'subject' : document.getElementById('subject').value, 'description' : document.getElementById('description').value});" style="
+                  line-height: normal;
+                  border-radius: 3px;
+                  background-color: #0181c8;
+                  padding: 10px 15px 10px 15px;
+                  display:inline-block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  cursor: pointer;
+                  color:#ffffff;
+                  font-size: 13px;">&nbsp;<a href="" style="text-decoration: none; color: inherit;">Submit</a>&nbsp;</button><a href="" style="text-decoration: none; color: inherit;">&nbsp; <span style="color: #000;">&nbsp;</span><p><br></p></a>
 
         
   </div>
+
+     </div>
        
        
     </body>
