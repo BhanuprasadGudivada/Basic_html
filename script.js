@@ -190,7 +190,7 @@ function GetData(){
 }
 
 function upload(){
-aptrinsic('kcb', 'open', {});
+window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html"
 }
 
 function request(){
