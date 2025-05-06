@@ -146,34 +146,37 @@ let WidgetPage= document.getElementById("WidgetPage")
 
 
 function Home(){
-   
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
+
     aptrinsic('set', 'globalContext', {"page":"Home"});
+window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
 }
 function Contact(){
-   
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
     aptrinsic('set', 'globalContext', {"page":"Contact"});
+ window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
 }
 function Payment(){
  
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html" ;
+   
     aptrinsic('set', 'globalContext', {"page":"Payment"});
+ window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html" ;
 }
 function About(){
    
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html" ;
+    
     aptrinsic('set', 'globalContext', {"page":"About"});
+window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html" ;
     
 }
 function DataLoader(){
     
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
+    
     aptrinsic('set', 'globalContext', {"page":"Dataloader"});
+window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
 }
 function widget(){
-    window.location="https://bhanuprasadgudivada.github.io/Basic_html/widgetpage.html" ;
+    
     aptrinsic('set', 'globalContext', {"page":"Widget"});
+window.location="https://bhanuprasadgudivada.github.io/Basic_html/widgetpage.html" ;
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
