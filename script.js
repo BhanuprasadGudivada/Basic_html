@@ -148,32 +148,32 @@ let WidgetPage= document.getElementById("WidgetPage")
 function Home(){
    
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
-    aptrinsic('set', 'globalContext', {"VersionID":"KC1", "page":"Home"});
+    aptrinsic('set', 'globalContext', {"page":"Home"});
 }
 function Contact(){
    
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
-    aptrinsic('set', 'globalContext', {"page":"contact"});
+    aptrinsic('set', 'globalContext', {"page":"Contact"});
 }
 function Payment(){
  
-    window.location="paymentpage.html" ;
-    aptrinsic('set', 'globalContext', {"page":"payment"});
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html" ;
+    aptrinsic('set', 'globalContext', {"page":"Payment"});
 }
 function About(){
    
-    window.location="aboutweb.html" ;
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html" ;
     aptrinsic('set', 'globalContext', {"page":"About"});
     
 }
 function DataLoader(){
     
-    window.location="dataloader.html" ;
-    aptrinsic('set', 'globalContext', {"page":"dataloader"});
-    aptrinsic('kcb', 'open', {});
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
+    aptrinsic('set', 'globalContext', {"page":"Dataloader"});
 }
 function widget(){
-    window.location="widgetpage.html" ;
+    window.location="https://bhanuprasadgudivada.github.io/Basic_html/widgetpage.html" ;
+    aptrinsic('set', 'globalContext', {"page":"Widget"});
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
