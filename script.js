@@ -147,36 +147,43 @@ let WidgetPage= document.getElementById("WidgetPage")
 
 function Home(){
 
-    aptrinsic('set', 'globalContext', {"page":"Home"});
+    aptrinsic('set', 'globalContext', {'page':'Home'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'Home'});
+
 }
 function Contact(){
-    aptrinsic('set', 'globalContext', {"page":"Contact"});
+    aptrinsic('set', 'globalContext', {'page':'Contact'});
  window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'Contact'});
+
 }
 function Payment(){
  
    
-    aptrinsic('set', 'globalContext', {"page":"Payment"});
+    aptrinsic('set', 'globalContext', {'page':'Payment'});
  window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'Payment'});
+
 }
 function About(){
-   
-    
-    aptrinsic('set', 'globalContext', {"page":"About"});
+aptrinsic('set', 'globalContext', {'page':'About'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'About'});
     
 }
 function DataLoader(){
-    
-    
-    aptrinsic('set', 'globalContext', {"page":"Dataloader"});
+aptrinsic('set', 'globalContext', {'page':'Dataloader'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'Dataloader'});
+
 }
 function widget(){
     
-    aptrinsic('set', 'globalContext', {"page":"Widget"});
+aptrinsic('set', 'globalContext', {'page':'Widget'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/widgetpage.html" ;
+aptrinsic('set', 'user', {'ContentType' : 'Widget'});
+
 }
 function Login(){
     window.location="https://bhanuprasadgudivada.github.io/Basic_html/index.html"
