@@ -80,8 +80,10 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //Account Fields
                 "id": "GS2551", //Required
                 "name": "Gainsight Admin"
-            });
-           {aptrinsic('set', 'globalContext', {"Product":"Cricket"});}
+            },
+            
+                aptrinsic('set', 'globalContext', {"Product":"Cricket"});
+            );
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
@@ -105,8 +107,11 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 "name": "Gainsight Identify",
                 "plan": "Premieum",
                 "timeZone": "IN"
-            });
-           {aptrinsic('set', 'globalContext', {"Product":"Telecom"});};
+            },
+            
+                 aptrinsic('set', 'globalContext', {"Product":"Telecom"});
+
+            );
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html";
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
@@ -129,8 +134,11 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
                 //Account Fields
                 "id": "GSID-12345", //Required
                 "name": "Gainsight internal"
-            });
-             {aptrinsic('set', 'globalContext', {"Product":"Ecommerce"});}  
+            },
+            
+                aptrinsic('set', 'globalContext', {"Product":"Ecommerce"});
+
+            );
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
            alert("Logged in user id :"+b+"Login Succesful in production"); 
