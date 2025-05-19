@@ -85,6 +85,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
+           aptrinsic('set', 'globalContext', {"Product":"Cricket"});
         
     }  
 
@@ -108,6 +109,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html";
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
+           aptrinsic('set', 'globalContext', {"Product":"Telecom"});
         
     }
 
@@ -130,7 +132,8 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             });
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html";
-           alert("Logged in user id :"+b+"Login Succesful in production");    
+           alert("Logged in user id :"+b+"Login Succesful in production"); 
+           aptrinsic('set', 'globalContext', {"Product":"Ecommerce"});   
      }
 else {
         alert("Please enter a valid username");
