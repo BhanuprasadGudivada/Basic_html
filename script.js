@@ -1,6 +1,6 @@
 
 
-var config={kcAllowedFuncNames: ["zendeskchat"]};
+var config= {kcAllowedFuncNames: ["zendeskchat"]};
 
 
 
@@ -168,7 +168,7 @@ let AboutPage = document.getElementById("AboutPage")
 let DataLoaderPage = document.getElementById("DataLoaderPage")
 let WidgetPage= document.getElementById("WidgetPage")
 
-function zendeskchat {
+function zendeskchat() {
 // api call for the chat bot
   var head = document. getElementsByTagName ( 'head' ) [0];
   var script = document. createElement ('script');
