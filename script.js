@@ -1,8 +1,32 @@
+
+
+var config={kcAllowedFuncNames: ["zendeskchat"]};
+
+function zendeskchat {
+// api call for the chat bot
+  var head = document. getElementsByTagName ( 'head' ) [0];
+  var script = document. createElement ('script');
+  script.id = "ze-snippet";
+  script.src="https://static.zdassets.com/ekr/snippet.js?key=8111c5e2-4a1a-4d87-b711-d81ac1b26be8";
+  script.onreadystatechange= handler1;
+  script.onload = handler1;
+  head-appendChild(script);
+        function handler1(){
+             console. log ("chatbot added");
+        }
+  aptrinsic('kcb', 'close', {
+        onDone: console.log
+  });
+}
+
+
+
+
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-OULYAMSSGJ8M-2",{widgetEnabled: false});
+})(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-OULYAMSSGJ8M-2", config);
 
 
 
