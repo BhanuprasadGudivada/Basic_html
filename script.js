@@ -2,22 +2,6 @@
 
 var config={kcAllowedFuncNames: ["zendeskchat"]};
 
-function zendeskchat {
-// api call for the chat bot
-  var head = document. getElementsByTagName ( 'head' ) [0];
-  var script = document. createElement ('script');
-  script.id = "ze-snippet";
-  script.src="https://static.zdassets.com/ekr/snippet.js?key=8111c5e2-4a1a-4d87-b711-d81ac1b26be8";
-  script.onreadystatechange= handler1;
-  script.onload = handler1;
-  head-appendChild(script);
-        function handler1(){
-             console. log ("chatbot added");
-        }
-  aptrinsic('kcb', 'close', {
-        onDone: console.log
-  });
-}
 
 
 
@@ -183,6 +167,24 @@ let PaymentPage = document.getElementById("PaymentPage")
 let AboutPage = document.getElementById("AboutPage")
 let DataLoaderPage = document.getElementById("DataLoaderPage")
 let WidgetPage= document.getElementById("WidgetPage")
+
+function zendeskchat {
+// api call for the chat bot
+  var head = document. getElementsByTagName ( 'head' ) [0];
+  var script = document. createElement ('script');
+  script.id = "ze-snippet";
+  script.src="https://static.zdassets.com/ekr/snippet.js?key=8111c5e2-4a1a-4d87-b711-d81ac1b26be8";
+  script.onreadystatechange= handler1;
+  script.onload = handler1;
+  head-appendChild(script);
+        function handler1(){
+             console. log ("chatbot added");
+        }
+  aptrinsic('kcb', 'close', {
+        onDone: console.log
+  });
+}
+
 
 
 function Home(){
