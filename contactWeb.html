@@ -235,12 +235,15 @@
   </div>
 
      </div>
-<div class="container bg-dark">
 
-<h1>Fill Your Biodata</h1>
+ <div class="container bg-dark">
+        <h1>Fill Your Biodata</h1>
 
         <div class="parent-element">
-            <button class="toggle-button">Personal Information</button>
+            <div class="parent-header">
+                <h2>Personal Information</h2>
+                <button class="toggle-button">Open to Enter Details</button>
+            </div>
             <div class="children-elements hidden">
                 <h3>Personal Details</h3>
                 <label for="firstName">First Name:</label>
@@ -263,7 +266,10 @@
         </div>
 
         <div class="parent-element">
-            <button class="toggle-button bg-info">Contact Information</button>
+            <div class="parent-header">
+                <h2>Contact Information</h2>
+                <button class="toggle-button bg-info">Open to Enter Details</button>
+            </div>
             <div class="children-elements hidden">
                 <h3>Contact Details</h3>
                 <label for="email">Email:</label>
@@ -278,7 +284,10 @@
         </div>
 
         <div class="parent-element">
-            <button class="toggle-button bg-warning">Educational Background</button>
+            <div class="parent-header">
+                <h2>Educational Background</h2>
+                <button class="toggle-button bg-warning">Open to Enter Details</button>
+            </div>
             <div class="children-elements hidden">
                 <h3>Education Details</h3>
                 <label for="qualification">Highest Qualification:</label>
@@ -291,9 +300,7 @@
                 <input type="number" id="graduationYear" name="graduationYear" min="1900" max="2099" placeholder="e.g., 2023">
             </div>
         </div>
-
-</div>
-       
+    </div>      
        
     </body>
 </html>               
