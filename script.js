@@ -389,3 +389,31 @@ window.addEventListener('beforeunload', function() {
         }
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+    const childrenElements = document.querySelectorAll('.children-elements');
+
+    toggleButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const currentChildren = button.nextElementSibling; // Get the .children-elements div next to the clicked button
+
+            // If the clicked section is already visible, hide it.
+            if (!currentChildren.classList.contains('hidden')) {
+                currentChildren.classList.add('hidden');
+                return; // Exit the function
+            }
+
+            // Hide all other children elements
+            childrenElements.forEach(child => {
+                if (child !== currentChildren) {
+                    child.classList.add('hidden');
+                }
+            });
+
+            // Toggle the visibility of the clicked parent's children
+            currentChildren.classList.remove('hidden');
+        });
+    });
+});
