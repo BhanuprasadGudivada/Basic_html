@@ -130,76 +130,97 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    /* AI background image - Replace with a suitable AI-themed image URL */
-    background-image: url('https://source.unsplash.com/1600x900/?artificial-intelligence,technology');
+    background-image: url('https://source.unsplash.com/1600x900/?artificial-intelligence,technology'); /* AI background */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #333; /* Default text color */
+    color: #333;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for readability */
+    background-color: rgba(255, 255, 255, 0.95);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
 }
 
 h1 {
     color: #0056b3;
     margin-bottom: 25px;
+    font-size: 2.2em;
 }
 
 .parent-element {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden; /* Ensures children don't overflow rounded corners */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.parent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #e2eafc;
+    border-bottom: 1px solid #cdd5ed;
+}
+
+.parent-header h2 {
+    margin: 0;
+    color: #333;
+    font-size: 1.4em;
+    flex-grow: 1;
+    text-align: left;
 }
 
 .toggle-button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px 20px;
-    text-align: left;
-    width: 100%;
+    padding: 10px 18px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
-    border-bottom: 1px solid #0056b3; /* Visual separation */
-    transition: background-color 0.3s ease;
+    font-size: 1em;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .toggle-button:hover {
     background-color: #0056b3;
+    transform: translateY(-1px);
 }
 
+/* --- Crucial for the dropdown effect --- */
 .children-elements {
     padding: 20px;
     background-color: #f9f9f9;
     text-align: left;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition for height and opacity */
-    max-height: 500px; /* Max height to allow transition */
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out, padding 0.5s ease-out;
+    max-height: 500px; /* This must be large enough to contain your content */
     opacity: 1;
-    overflow: hidden; /* Hide overflowing content during transition */
+    overflow: hidden; /* Important for the max-height transition */
 }
 
 .children-elements.hidden {
-    max-height: 0;
-    opacity: 0;
-    padding: 0 20px; /* Adjust padding to avoid abrupt change */
+    max-height: 0; /* Collapses the element */
+    opacity: 0; /* Fades it out */
+    padding-top: 0; /* Collapses padding */
+    padding-bottom: 0; /* Collapses padding */
 }
 
 .children-elements h3 {
-    color: #333;
+    color: #444;
     margin-top: 0;
     margin-bottom: 15px;
     border-bottom: 1px solid #eee;
     padding-bottom: 8px;
+    font-size: 1.2em;
 }
 
 .children-elements label {
@@ -216,20 +237,20 @@ h1 {
 .children-elements input[type="number"],
 .children-elements select,
 .children-elements textarea {
-    width: calc(100% - 20px); /* Account for padding */
+    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding in element's total width */
+    box-sizing: border-box;
     font-size: 1em;
+    background-color: #fff;
 }
 
 .children-elements textarea {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical;
 }
 
-/* Optional: Placeholder styling */
 input::placeholder,
 textarea::placeholder {
     color: #aaa;
