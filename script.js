@@ -399,21 +399,18 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const currentChildren = button.nextElementSibling; // Get the .children-elements div next to the clicked button
 
-            // If the clicked section is already visible, hide it.
-            if (!currentChildren.classList.contains('hidden')) {
-                currentChildren.classList.add('hidden');
-                return; // Exit the function
-            }
-
-            // Hide all other children elements
+            // First, hide all other children's elements
             childrenElements.forEach(child => {
+                // Only hide if it's not the current one being toggled
                 if (child !== currentChildren) {
                     child.classList.add('hidden');
                 }
             });
 
-            // Toggle the visibility of the clicked parent's children
-            currentChildren.classList.remove('hidden');
+            // Then, toggle the visibility of the clicked parent's children
+            // If it's currently hidden, remove 'hidden' to show it.
+            // If it's currently visible, add 'hidden' to hide it.
+            currentChildren.classList.toggle('hidden');
         });
     });
 });
