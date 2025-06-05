@@ -113,7 +113,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             },
             {
                 //Account Fields
-                "id": "GSADMIN"
+                "id": "GSadmin1"
                 "name": "Gainsight Identify",
                 "plan": "Premieum",
                 "timeZone": "IN"
