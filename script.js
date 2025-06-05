@@ -391,27 +391,3 @@ window.addEventListener('beforeunload', function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleButtons = document.querySelectorAll('.toggle-button');
-    const allChildrenElements = document.querySelectorAll('.children-elements');
-
-    toggleButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Find the closest parent-element ancestor of the clicked button
-            const parentElement = button.closest('.parent-element');
-            // Then find the children-elements div *within* that specific parentElement
-            const currentChildren = parentElement.querySelector('.children-elements');
-
-            // Hide all other children elements
-            allChildrenElements.forEach(child => {
-                if (child !== currentChildren) {
-                    child.classList.add('hidden');
-                }
-            });
-
-            // Toggle the visibility of the clicked parent's children
-            // This adds 'hidden' if it's visible, removes 'hidden' if it's hidden.
-            currentChildren.classList.toggle('hidden');
-        });
-    });
-});
