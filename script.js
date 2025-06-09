@@ -181,10 +181,12 @@ function zendeskchat() {
         function handler1(){
              console. log ("chatbot added");
         }
-    });
-aptrinsic('kcb', 'hide', {
-  onError: console.error
-}
+        aptrinsic('kcb', 'hide', {
+             onDone: console.log,
+             onError: console.error
+        });
+  }
+
 
 
 
