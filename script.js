@@ -240,6 +240,13 @@ aptrinsic('kcb', 'show', {
 });
     
 }
+
+function botShow(){
+    aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
+}
 function DataLoader(){
 aptrinsic('set', 'globalContext', {'page':'Dataloader'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
