@@ -97,6 +97,10 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
+           aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
         
     }  
 
@@ -127,6 +131,10 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
 
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
+           aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
     }
 
      else if(a.match(mailformat)){ 
@@ -154,7 +162,11 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
             aptrinsic('set', 'globalContext', {"Product":"Ecommerce"});
 
            alert("Logged in user id :"+b+"Login Succesful in production"); 
-            aptrinsic('set', 'globalContext', {"Identified":"true"});
+           aptrinsic('set', 'globalContext', {"Identified":"true"});
+           aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
         
      }
 else {
