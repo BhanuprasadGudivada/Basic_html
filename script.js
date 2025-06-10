@@ -71,7 +71,7 @@ window['_fs_namespace'] = 'FS';
 function login(form){
 let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
-     var b ="";
+var b ="";
     if (a ==="admin@gmail.com" || a === "testuser@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
         b= a.substr(2,4);
         var id = b;
@@ -97,10 +97,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
-           aptrinsic('kcb', 'show', {
-  onDone: console.log,
-  onError: console.error
-});
+           
         
     }  
 
@@ -131,10 +128,7 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
 
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
-           aptrinsic('kcb', 'show', {
-  onDone: console.log,
-  onError: console.error
-});
+          
     }
 
      else if(a.match(mailformat)){ 
@@ -163,15 +157,16 @@ var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
 
            alert("Logged in user id :"+b+"Login Succesful in production"); 
            aptrinsic('set', 'globalContext', {"Identified":"true"});
-           aptrinsic('kcb', 'show', {
-  onDone: console.log,
-  onError: console.error
-});
+           
         
      }
 else {
         alert("Please enter a valid username");
     }
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
     return b;
 }
 let HomePage = document.getElementById("HomePage")
@@ -207,12 +202,20 @@ function Home(){
     aptrinsic('set', 'globalContext', {'page':'Home'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Home'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 }
 function Contact(){
     aptrinsic('set', 'globalContext', {'page':'Contact'});
  window.location="https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Contact'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 }
 function Payment(){
@@ -221,18 +224,30 @@ function Payment(){
     aptrinsic('set', 'globalContext', {'page':'Payment'});
  window.location="https://bhanuprasadgudivada.github.io/Basic_html/paymentpage.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Payment'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 }
 function About(){
 aptrinsic('set', 'globalContext', {'page':'About'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'About'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
     
 }
 function DataLoader(){
 aptrinsic('set', 'globalContext', {'page':'Dataloader'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/dataloader.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Dataloader'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 }
 function widget(){
@@ -240,6 +255,10 @@ function widget(){
 aptrinsic('set', 'globalContext', {'page':'Widget'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/widgetpage.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Widget'});
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 }
 function Login(){
