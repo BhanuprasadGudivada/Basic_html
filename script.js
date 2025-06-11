@@ -1,10 +1,7 @@
 
 
 var config= {kcAllowedFuncNames: ["zendeskchat"]};
-aptrinsic('kcb', 'show', {
-  onDone: console.log,
-  onError: console.error
-});
+
 
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
@@ -239,7 +236,7 @@ aptrinsic('kcb', 'show', {
 }
 
 function botShow(){
-    aptrinsic('kcb', 'show', {
+  aptrinsic('kcb', 'show', {
   onDone: console.log,
   onError: console.error
 });
