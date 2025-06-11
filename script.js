@@ -82,7 +82,8 @@ var b ="";
                 //User Fields
                 "id": id, 
                 "email": a,
-                "UserRole": "Admin"
+                "UserRole": "Admin",
+                "FreeOwnerStatus": "Active"
             },
             {
                 //Account Fields
@@ -110,7 +111,9 @@ var b ="";
                 //User Fields
                 "id": id, 
                 "email": a,
-                "UserRole": "User"
+                "UserRole": "User",
+                "FreeOwnerStatus": "Not Active"
+                
             },
             {
                 //Account Fields
@@ -141,7 +144,8 @@ var b ="";
                 //User Fields
                 "id": a, 
                 "email": a,
-                "UserRole": "User"
+                "UserRole": "User",
+                "FreeOwnerStatus": "Active"
             },
             {
                 //Account Fields
