@@ -1,10 +1,10 @@
 
 
 var config= {kcAllowedFuncNames: ["zendeskchat"]};
-
-
-
-
+aptrinsic('kcb', 'show', {
+  onDone: console.log,
+  onError: console.error
+});
 
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
@@ -90,9 +90,6 @@ var b ="";
                 "id": "GS2551", //Required
                 "name": "Gainsight Admin"
             });
-            
-               
-            
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
@@ -167,10 +164,7 @@ var b ="";
 else {
         alert("Please enter a valid username");
     }
-aptrinsic('kcb', 'show', {
-  onDone: console.log,
-  onError: console.error
-});
+
     return b;
 }
 let HomePage = document.getElementById("HomePage")
@@ -202,8 +196,7 @@ function zendeskchat() {
 
 
 function Home(){
-
-    aptrinsic('set', 'globalContext', {'page':'Home'});
+aptrinsic('set', 'globalContext', {'page':'Home'});
 window.location="https://bhanuprasadgudivada.github.io/Basic_html/websitepage.html" ;
 aptrinsic('set', 'user', {'ContentType' : 'Home'});
 aptrinsic('kcb', 'show', {
