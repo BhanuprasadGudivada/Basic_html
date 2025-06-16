@@ -1,6 +1,6 @@
 
 
-var config= {kcAllowedFuncNames: ["zendeskchat"]};
+var config= {kcAllowedFuncNames: ["zendeskchat", "initializeSearchBot"]};
 
 
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
@@ -189,6 +189,13 @@ function zendeskchat() {
         });
   }
 
+function initializeSearchBot() {
+    setTimeout(function() {
+            aptrinsic("bot", "search", {labels: ["kc_bot"]});
+    }, 1000);   
+            
+},
+
 
 
 
@@ -240,6 +247,9 @@ function botShow(){
   onDone: console.log,
   onError: console.error
 });
+setTimeout(function() {
+            aptrinsic("bot", "search", {labels: ["kc_bot"]});
+    }, 1000); 
 }
 function DataLoader(){
 aptrinsic('set', 'globalContext', {'page':'Dataloader'});
