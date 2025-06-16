@@ -194,7 +194,7 @@ function initializeSearchBot() {
             aptrinsic("bot", "search", {labels: ["kc_bot"]});
     }, 1000);   
             
-},
+}
 
 
 
@@ -246,10 +246,12 @@ function botShow(){
   aptrinsic('kcb', 'show', {
   onDone: console.log,
   onError: console.error
-});
-setTimeout(function() {
+
+  });
+  setTimeout(function() {
             aptrinsic("bot", "search", {labels: ["kc_bot"]});
-    }, 1000); 
+  }, 1000); 
+ 
 }
 function DataLoader(){
 aptrinsic('set', 'globalContext', {'page':'Dataloader'});
