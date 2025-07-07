@@ -87,6 +87,7 @@ var b ="";
                 "id": "GS2551", //Required
                 "name": "Gainsight Admin"
             });
+           aptrinsic('set', 'globalContext', {"package": "elite"});
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
@@ -107,6 +108,7 @@ var b ="";
                 "email": a,
                 "UserRole": "User",
                 "FreeOwnerStatus": "Not Active"
+
                 
             },
             {
@@ -119,10 +121,9 @@ var b ="";
             
                 
             );
+           
            alert("Valid User");
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html";
-           aptrinsic('set', 'globalContext', {"Product":"Telecom"});
-
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
           
