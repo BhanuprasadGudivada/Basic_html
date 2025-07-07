@@ -73,7 +73,7 @@ var b ="";
         b= a.substr(2,4);
         var id = b;
 
-        
+        aptrinsic('set', 'globalContext', {"package": "elite"});
         aptrinsic("identify",
             {
                 //User Fields
@@ -86,8 +86,10 @@ var b ="";
                 //Account Fields
                 "id": "GS2551", //Required
                 "name": "Gainsight Admin"
-            });
-           aptrinsic('set', 'globalContext', {"package": "elite"});
+            }
+              
+        );
+         
            alert("Valid User Welcome to App");
             window.location = "https://bhanuprasadgudivada.github.io/Basic_html/aboutweb.html";
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
