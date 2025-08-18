@@ -62,12 +62,23 @@ window['_fs_namespace'] = 'FS';
   analytics.page();
   }}();*/
 
-
+// Assign the current date and time to the signUpDate variable
 
 
 function login(form){
 let a=document.getElementById("InputElement").value ;
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+// Assign the current date and time to the signUpDate variable
+let signUpDate = new Date();
+
+// Get the epoch time from the Date object
+let epochTime = signUpDate.getTime();
+
+console.log("User signed up on (epoch time):", epochTime);
+// Get the epoch time in seconds
+let epochTimeSeconds = Math.floor(signUpDate.getTime() / 1000);
+
+console.log("User signed up on (epoch time in seconds):", epochTimeSeconds);
 var b ="";
     if (a ==="admin@gmail.com" || a === "testuser@gmail.com" || a === "demouser@gmail.com" || a === "bprasad@gmail.com" || a === "bhanu@gmail.com" || a === "testuser1@gmail.com" || a === "prasad@gmail.com") {
         b= a.substr(2,4);
@@ -80,7 +91,8 @@ var b ="";
                 "id": id, 
                 "email": a,
                 "UserRole": "Admin",
-                "FreeOwnerStatus": "Active"
+                "FreeOwnerStatus": "Active",
+                "First_login_date": epochTimeSeconds
             },
             {
                 //Account Fields
@@ -95,7 +107,7 @@ var b ="";
              aptrinsic('set', 'globalContext', {"Product":"Cricket"});
            alert("Logged in user id :"+b+"Admin Login Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
-           
+           console.log("User signed up on (epoch time):", epochTime);
         
     }  
 
@@ -109,7 +121,9 @@ var b ="";
                 "id": id, 
                 "email": a,
                 "UserRole": "User",
-                "FreeOwnerStatus": "Not Active"
+                "FreeOwnerStatus": "Not Active",
+                "First_login_date": epochTimeSeconds
+                
 
                 
             },
@@ -128,7 +142,7 @@ var b ="";
            window.location = "https://bhanuprasadgudivada.github.io/Basic_html/contactWeb.html";
            alert("Logged in user id :"+b+"Login Identify Succesful in production");
            aptrinsic('set', 'globalContext', {"Identified":"true"});
-          
+           console.log("User signed up on (epoch time):", epochTime);
     }
 
      else if(a.match(mailformat)){ 
@@ -142,7 +156,8 @@ var b ="";
                 "id": a, 
                 "email": a,
                 "UserRole": "User",
-                "FreeOwnerStatus": "Active"
+                "FreeOwnerStatus": "Active",
+                "First_login_date": epochTimeSeconds
             },
             {
                 //Account Fields
@@ -157,6 +172,7 @@ var b ="";
             aptrinsic('set', 'globalContext', {"Product":"Ecommerce"});
 
            alert("Logged in user id :"+b+"Login Succesful in production"); 
+           console.log("User signed up on (epoch time):", epochTime);
            aptrinsic('set', 'globalContext', {"Identified":"true"});
            
         
