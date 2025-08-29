@@ -97,7 +97,8 @@ var b ="";
             {
                 //Account Fields
                 "id": "GS2551", //Required
-                "name": "Gainsight Admin"
+                "name": "Gainsight Admin",
+                "CSMEMDCalendarLink": "https://certifid.my.leandata.com/l/gm0GpB9/sara-reddington-emd-overview"
             }
               
         );
@@ -132,7 +133,8 @@ var b ="";
                 "id": "GSadmin1", //Required
                 "name": "Gainsight Identify",
                 "plan": "Premium",
-                "timeZone": "IN"
+                "timeZone": "IN",
+                "CSMEMDCalendarLink": "https://certifid.my.leandata.com/l/gm0GpB9/sara-reddington-emd-overview"
             }
             
                 
@@ -162,7 +164,8 @@ var b ="";
             {
                 //Account Fields
                 "id": "GSID-12345", //Required
-                "name": "Gainsight internal"
+                "name": "Gainsight internal",
+                "CSMEMDCalendarLink": "https://certifid.my.leandata.com/l/gm0GpB9/sara-reddington-emd-overview"
             }
             
                
