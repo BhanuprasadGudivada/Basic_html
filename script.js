@@ -201,6 +201,7 @@ function zendeskchat() {
   script.src="https://static.zdassets.com/ekr/snippet.js?key=8111c5e2-4a1a-4d87-b711-d81ac1b26be8";
   script.onreadystatechange= handler1;
   script.onload = handler1;
+  aptrinsic('track', 'Contact support', {"Opened":true});  
   head.appendChild(script);
         function handler1(){
              console. log ("chatbot added");
