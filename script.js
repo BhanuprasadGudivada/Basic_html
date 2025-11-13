@@ -463,6 +463,9 @@ document.getElementById('uniqueDropdownButton').addEventListener('click', functi
     document.getElementById('uniqueDropdownContent').classList.toggle('show');
 });
 
+function format(){
+    aptrinsic('track','Sync Completed', {"format":"t20i"});
+}
 
 
 window.onclick = function(event) {
