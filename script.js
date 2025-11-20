@@ -163,7 +163,7 @@ var b ="";
             },
             {
                 //Account Fields
-                "id": "GSID-12345", //Required
+                "id": "GS12345", //Required
                 "name": "Gainsight internal",
                 "CSMEMDCalendarLink": "https://certifid.my.leandata.com/l/gm0GpB9/sara-reddington-emd-overview"
             }
