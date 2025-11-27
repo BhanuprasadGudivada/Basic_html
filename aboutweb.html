@@ -19,6 +19,49 @@
       margin: 0 auto;
     }
    </style>
+
+   <script>
+        let startTime;
+
+        // Record the start time when the page is loaded
+        window.addEventListener('load', () => {
+            startTime = new Date().getTime();
+        });
+
+        // Function to format time in a user-friendly way (minutes and seconds)
+        function formatTime(milliseconds) {
+            const totalSeconds = Math.floor(milliseconds / 1000);
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            return `${minutes} mins ${seconds} secs`;
+        }
+
+        // General function to handle custom event tracking
+        function trackPageUnload() {
+            const endTime = new Date().getTime();
+            const timeSpent = endTime - startTime; // Time in milliseconds
+            const formattedTimeSpent = formatTime(timeSpent);
+
+            // Trigger the custom event with tracking data
+            aptrinsic('track', 'About_Page_Time_Spent', {"Time Spent": formattedTimeSpent});
+
+            console.log(`Time spent on page: ${formattedTimeSpent}`);
+        }
+
+        // Listen for the beforeunload event
+        window.addEventListener('beforeunload', () => {
+            trackPageUnload();
+        });
+
+        // If you have links that navigate to other pages, you can attach the tracking on link clicks
+        document.addEventListener('click', (event) => {
+            const target = event.target.closest('a');
+            if (target && target.href) {
+                trackPageUnload();
+            }
+        });
+
+    </script>     
     
     </head>
     <body onload="botShow()">
