@@ -480,4 +480,27 @@ window.onclick = function(event) {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const openPopupBtn = document.getElementById("openPopupBtn");
+    const closePopupBtn = document.getElementById("closePopupBtn");
+    const overlay = document.getElementById("overlay");
+    const popup = document.getElementById("popup");
+
+    openPopupBtn.addEventListener("click", function () {
+        overlay.classList.remove("hidden");
+        popup.classList.remove("hidden");
+    });
+
+    closePopupBtn.addEventListener("click", function () {
+        overlay.classList.add("hidden");
+        popup.classList.add("hidden");
+    });
+
+    // Optional: Close the popup when the user clicks outside of it
+    overlay.addEventListener("click", function () {
+        overlay.classList.add("hidden");
+        popup.classList.add("hidden");
+    });
+});
+
 
