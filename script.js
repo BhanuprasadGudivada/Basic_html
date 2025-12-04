@@ -486,21 +486,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("overlay");
     const popup = document.getElementById("popup");
 
+    // Function to open the popup
     openPopupBtn.addEventListener("click", function () {
         overlay.classList.remove("hidden");
         popup.classList.remove("hidden");
     });
 
+    // Function to close the popup
     closePopupBtn.addEventListener("click", function () {
         overlay.classList.add("hidden");
         popup.classList.add("hidden");
     });
 
-    // Optional: Close the popup when the user clicks outside of it
+    // Close the popup when the overlay is clicked
     overlay.addEventListener("click", function () {
         overlay.classList.add("hidden");
         popup.classList.add("hidden");
     });
 });
-
-
