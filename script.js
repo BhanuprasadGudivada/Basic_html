@@ -147,7 +147,7 @@ var b ="";
            console.log("User signed up on (epoch time):", epochTime);
     }
 
-     else if(a.match(mailformat)){ 
+     else if(a.match(mailformat) || a === "bgudivada@gainsight.com"){ 
          b= a.substr(1,6);
         var id = b;
 
